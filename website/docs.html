@@ -31,10 +31,8 @@
 			.docs-header h1 {
 				font-size: 2.5rem;
 				margin-bottom: 1rem;
-				background: linear-gradient(135deg, #2563eb, #1e40af);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
+				color: var(--color-text);
+				font-weight: 600;
 			}
 
 			.docs-header .docs-subtitle {
@@ -52,18 +50,20 @@
 
 			.docs-nav a {
 				padding: 8px 18px;
-				border-radius: 20px;
+				border-radius: var(--radius, 8px);
 				background: var(--bg-secondary);
 				color: var(--text-primary);
 				text-decoration: none;
 				font-size: 0.9rem;
-				transition: all 0.2s;
-				border: 1px solid transparent;
+				transition: border-color var(--dur-normal, 200ms) var(--ease, ease),
+					color var(--dur-normal, 200ms) var(--ease, ease);
+				border: 1px solid var(--border-color);
 			}
 
 			.docs-nav a:hover {
-				border-color: var(--primary-color);
-				color: var(--primary-color);
+				border-color: var(--color-accent);
+				color: var(--color-accent);
+				background: var(--color-accent-soft);
 			}
 
 			.docs-section {
@@ -75,7 +75,7 @@
 				color: var(--text-primary);
 				margin-bottom: 1rem;
 				padding-bottom: 0.5rem;
-				border-bottom: 2px solid var(--primary-color);
+				border-bottom: 1px solid var(--color-border);
 				display: inline-block;
 			}
 
@@ -143,8 +143,9 @@
 				top: 0;
 				width: 1.8rem;
 				height: 1.8rem;
-				background: linear-gradient(135deg, #2563eb, #1e40af);
-				color: white;
+				background: transparent;
+				color: var(--color-accent);
+				border: 1px solid var(--color-border);
 				border-radius: 50%;
 				display: flex;
 				align-items: center;
@@ -155,9 +156,9 @@
 
 			.highlight-box {
 				background: var(--bg-secondary);
-				border-left: 4px solid var(--primary-color);
+				border-left: 3px solid var(--color-accent);
 				padding: 1rem 1.5rem;
-				border-radius: 0 8px 8px 0;
+				border-radius: 0 var(--radius, 8px) var(--radius, 8px) 0;
 				margin: 1.5rem 0;
 			}
 

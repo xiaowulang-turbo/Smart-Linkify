@@ -66,3 +66,6 @@ coverage/
 # 其他
 .cache/
 .codebuddy
+
+# 本地验证产物（chrome-devtools MCP 截图等）
+website/screenshots/

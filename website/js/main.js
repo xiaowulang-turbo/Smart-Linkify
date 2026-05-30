@@ -58,22 +58,9 @@ function initThemeToggle() {
 	})
 }
 
-// 导航栏滚动效果
+// 导航栏滚动效果（保留函数骨架以防其他代码引用）
 function initNavbarScroll() {
-	const navbar = document.querySelector('.navbar')
-	let lastScroll = 0
-
-	window.addEventListener('scroll', () => {
-		const currentScroll = window.pageYOffset
-
-		if (currentScroll > 100) {
-			navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)'
-		} else {
-			navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)'
-		}
-
-		lastScroll = currentScroll
-	})
+	// 导航栏视觉由 CSS border-bottom 驱动，不再用 JS 注入 box-shadow
 }
 
 // 移动端菜单
@@ -166,31 +153,27 @@ function initSmoothScroll() {
 
 // 动画效果
 function initAnimations() {
-	// 观察器配置
 	const observerOptions = {
 		threshold: 0.1,
 		rootMargin: '0px 0px -50px 0px',
 	}
 
-	// 创建观察器
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				entry.target.style.opacity = '1'
-				entry.target.style.transform = 'translateY(0)'
+				observer.unobserve(entry.target)
 			}
 		})
 	}, observerOptions)
 
-	// 观察需要动画的元素
 	const animatedElements = document.querySelectorAll(
 		'.feature-card, .use-case-card, .doc-card, .download-card, .step'
 	)
 
 	animatedElements.forEach((el) => {
 		el.style.opacity = '0'
-		el.style.transform = 'translateY(30px)'
-		el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
+		el.style.transition = 'opacity var(--dur-slow, 300ms) var(--ease, ease)'
 		observer.observe(el)
 	})
 }
@@ -220,18 +203,6 @@ function showNotification(message) {
 	const notification = document.createElement('div')
 	notification.className = 'notification'
 	notification.textContent = message
-	notification.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-        color: white;
-        padding: 15px 25px;
-        border-radius: 50px;
-        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
-        z-index: 10000;
-        animation: slideIn 0.3s ease;
-    `
 
 	document.body.appendChild(notification)
 
@@ -247,40 +218,13 @@ function showNotification(message) {
 const style = document.createElement('style')
 style.textContent = `
     @keyframes slideIn {
-        from {
-            transform: translateX(400px);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(400px);
-            opacity: 0;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .nav-menu.active {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            gap: 15px;
-        }
+        from { opacity: 1; transform: translateY(0); }
+        to { opacity: 0; transform: translateY(10px); }
     }
 `
 document.head.appendChild(style)
