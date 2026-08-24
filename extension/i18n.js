@@ -304,6 +304,18 @@ const i18n = {
 				el.title = translation
 			}
 		})
+
+		// 更新 aria-label 属性
+		const ariaLabels = document.querySelectorAll(
+			'[data-i18n-aria-label]'
+		)
+		ariaLabels.forEach((el) => {
+			const key = el.getAttribute('data-i18n-aria-label')
+			const translation = this.t(key)
+			if (translation) {
+				el.setAttribute('aria-label', translation)
+			}
+		})
 	},
 
 	// 获取翻译

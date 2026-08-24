@@ -11,6 +11,7 @@ const i18n = {
 			'nav.demo': '演示',
 			'nav.download': '下载',
 			'nav.docs': '文档',
+			'common.switchTheme': '切换主题',
 
 			// Hero 区域
 			'hero.title': '智能超链接识别',
@@ -264,6 +265,7 @@ const i18n = {
 			'nav.demo': 'Demo',
 			'nav.download': 'Download',
 			'nav.docs': 'Docs',
+			'common.switchTheme': 'Switch theme',
 
 			// Hero 区域
 			'hero.title': 'Smart Hyperlink Recognition',
@@ -584,6 +586,18 @@ const i18n = {
 			const translation = this.t(key)
 			if (translation) {
 				el.title = translation
+			}
+		})
+
+		// 更新 aria-label 属性
+		const ariaLabels = document.querySelectorAll(
+			'[data-i18n-aria-label]'
+		)
+		ariaLabels.forEach((el) => {
+			const key = el.getAttribute('data-i18n-aria-label')
+			const translation = this.t(key)
+			if (translation) {
+				el.setAttribute('aria-label', translation)
 			}
 		})
 	},
