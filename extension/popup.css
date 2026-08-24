@@ -221,12 +221,14 @@ input:disabled + .slider {
 	align-items: center;
 	justify-content: center;
 	gap: 6px;
+	line-height: 1;
 }
 
 .btn .icon {
 	width: 15px;
 	height: 15px;
 	flex: 0 0 auto;
+	display: block;
 }
 
 .btn:hover {
