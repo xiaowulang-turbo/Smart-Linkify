@@ -21,10 +21,37 @@
 					class="theme-toggle"
 					id="themeToggle"
 					data-i18n-title="common.switchTheme"
+					data-i18n-aria-label="common.switchTheme"
 					title="切换主题"
+					aria-label="切换主题"
 				>
-					<span class="icon-moon">🌙</span>
-					<span class="icon-sun">☀️</span>
+					<svg
+						class="icon icon-moon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+					</svg>
+					<svg
+						class="icon icon-sun"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<circle cx="12" cy="12" r="4" />
+						<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+					</svg>
 				</button>
 				<h1 data-i18n="popup.title">智能超链接识别</h1>
 				<p class="subtitle" data-i18n="popup.subtitle">
@@ -34,7 +61,6 @@
 
 			<div class="content">
 				<div class="domain-section">
-					<span class="domain-icon">🌐</span>
 					<span class="domain-name" id="currentDomain">—</span>
 				</div>
 
@@ -48,22 +74,22 @@
 
 				<div class="info" id="infoActive">
 					<p data-i18n="popup.info.convert">
-						🔗 自动将纯文本 URL 转换为可点击链接
+						自动将纯文本 URL 转换为可点击链接
 					</p>
 					<p data-i18n="popup.info.dynamic">
-						⚡ 支持动态内容实时处理
+						支持动态内容实时处理
 					</p>
 				</div>
 
 				<div class="info hint-inactive" id="infoInactive" style="display: none">
 					<p data-i18n="popup.hint.enable">
-						💡 点击开关为当前网站启用链接转换
+						点击开关为当前网站启用链接转换
 					</p>
 				</div>
 
 				<div class="info hint-inactive" id="infoUnsupported" style="display: none">
 					<p data-i18n="popup.hint.unsupported">
-						⚠️ 此页面不支持链接转换
+						此页面不支持链接转换
 					</p>
 				</div>
 
@@ -79,16 +105,43 @@
 				<button
 					id="optionsBtn"
 					class="btn"
-					data-i18n="popup.btn.settings"
 				>
-					⚙️ 设置
+					<svg
+						class="icon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" />
+						<path d="m19.4 15 .1.1a2 2 0 1 1-2.8 2.8l-.1-.1a2 2 0 0 0-3.4 1.4V19a2 2 0 1 1-4 0v-.1a2 2 0 0 0-3.4-1.4l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A2 2 0 0 0 3.7 12H3.5a2 2 0 1 1 0-4h.2a2 2 0 0 0 1.4-3.4L5 4.5a2 2 0 1 1 2.8-2.8l.1.1A2 2 0 0 0 11.3.4V.3a2 2 0 1 1 4 0v.1a2 2 0 0 0 3.4 1.4l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1A2 2 0 0 0 22.9 8h.2a2 2 0 1 1 0 4h-.2a2 2 0 0 0-1.4 3.4Z" transform="translate(-2.5 2.5) scale(.8)" />
+					</svg>
+					<span data-i18n="popup.btn.settings">设置</span>
 				</button>
 				<button
 					id="refreshBtn"
 					class="btn"
-					data-i18n="popup.btn.refresh"
 				>
-					🔄 刷新页面
+					<svg
+						class="icon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<path d="M20 11a8.1 8.1 0 0 0-14.9-4L3 10" />
+						<path d="M3 4v6h6M4 13a8.1 8.1 0 0 0 14.9 4L21 14" />
+						<path d="M21 20v-6h-6" />
+					</svg>
+					<span data-i18n="popup.btn.refresh">刷新页面</span>
 				</button>
 			</div>
 			<div class="version" id="versionText"></div>

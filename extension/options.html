@@ -13,10 +13,37 @@
 					class="theme-toggle"
 					id="themeToggle"
 					data-i18n-title="common.switchTheme"
+					data-i18n-aria-label="common.switchTheme"
 					title="切换主题"
+					aria-label="切换主题"
 				>
-					<span class="icon-moon">🌙</span>
-					<span class="icon-sun">☀️</span>
+					<svg
+						class="icon icon-moon"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+					</svg>
+					<svg
+						class="icon icon-sun"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+						focusable="false"
+					>
+						<circle cx="12" cy="12" r="4" />
+						<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+					</svg>
 				</button>
 				<button
 					class="lang-toggle"
@@ -68,7 +95,7 @@
 									id="themeAuto"
 								/>
 								<span data-i18n="options.appearance.theme.auto"
-									>💻 跟随系统</span
+									>跟随系统</span
 								>
 							</label>
 							<label class="radio-label">
@@ -79,7 +106,7 @@
 									id="themeLight"
 								/>
 								<span data-i18n="options.appearance.theme.light"
-									>☀️ 浅色模式</span
+									>浅色模式</span
 								>
 							</label>
 							<label class="radio-label">
@@ -90,7 +117,7 @@
 									id="themeDark"
 								/>
 								<span data-i18n="options.appearance.theme.dark"
-									>🌙 深色模式</span
+									>深色模式</span
 								>
 							</label>
 						</div>
@@ -116,7 +143,7 @@
 									id="langAuto"
 								/>
 								<span data-i18n="options.appearance.lang.auto"
-									>🌐 自动检测</span
+									>自动检测</span
 								>
 							</label>
 							<label class="radio-label">
@@ -127,7 +154,7 @@
 									id="langZh"
 								/>
 								<span data-i18n="options.appearance.lang.zh"
-									>🇨🇳 简体中文</span
+									>简体中文</span
 								>
 							</label>
 							<label class="radio-label">
@@ -138,7 +165,7 @@
 									id="langEn"
 								/>
 								<span data-i18n="options.appearance.lang.en"
-									>🇺🇸 English</span
+									>English</span
 								>
 							</label>
 						</div>
@@ -152,7 +179,7 @@
 				</section>
 
 				<section class="section">
-					<h2 data-i18n="options.whitelist.title">✅ 已启用的网站</h2>
+					<h2 data-i18n="options.whitelist.title">已启用的网站</h2>
 					<p class="section-desc" data-i18n="options.whitelist.desc">
 						仅在以下网站上启用链接转换功能（每行一个域名）
 					</p>
@@ -163,13 +190,13 @@
 						placeholder="例如：&#10;github.com&#10;stackoverflow.com&#10;example.com"
 					></textarea>
 					<p class="hint" data-i18n="options.whitelist.hint">
-						💡 提示：只需输入域名，子域名将自动包含（如输入 github.com 也会匹配 docs.github.com）
+						提示：只需输入域名，子域名将自动包含（如输入 github.com 也会匹配 docs.github.com）
 					</p>
 				</section>
 
 				<section class="section">
 					<h2 data-i18n="options.excludedTags.title">
-						🏷️ 排除的 HTML 标签
+						排除的 HTML 标签
 					</h2>
 					<p
 						class="section-desc"
@@ -184,13 +211,13 @@
 						placeholder="SCRIPT, STYLE, PRE, CODE, A"
 					/>
 					<p class="hint" data-i18n="options.excludedTags.hint">
-						💡 默认排除：SCRIPT, STYLE, NOSCRIPT, TEXTAREA, PRE,
+						默认排除：SCRIPT, STYLE, NOSCRIPT, TEXTAREA, PRE,
 						CODE, A
 					</p>
 				</section>
 
 				<section class="section">
-					<h2 data-i18n="options.urlMatch.title">🔗 URL 匹配设置</h2>
+					<h2 data-i18n="options.urlMatch.title">URL 匹配设置</h2>
 					<p class="section-desc" data-i18n="options.urlMatch.desc">
 						配置 URL 识别的精确程度
 					</p>
@@ -236,13 +263,13 @@
 							>
 						</p>
 						<p data-i18n="options.about.feature1">
-							✨ 自动将网页中的纯文本 URL 转换为可点击的超链接
+							自动将网页中的纯文本 URL 转换为可点击的超链接
 						</p>
 						<p data-i18n="options.about.feature2">
-							⚡ 支持动态内容实时处理
+							支持动态内容实时处理
 						</p>
 						<p data-i18n="options.about.feature3">
-							🔒 所有操作在本地完成，不收集任何数据
+							所有操作在本地完成，不收集任何数据
 						</p>
 					</div>
 				</section>
@@ -254,14 +281,14 @@
 					class="btn btn-primary"
 					data-i18n="options.btn.save"
 				>
-					💾 保存设置
+					保存设置
 				</button>
 				<button
 					id="resetBtn"
 					class="btn btn-secondary"
 					data-i18n="options.btn.reset"
 				>
-					🔄 恢复默认
+					恢复默认
 				</button>
 				<div id="saveStatus" class="save-status"></div>
 			</footer>

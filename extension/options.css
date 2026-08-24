@@ -154,6 +154,16 @@ footer {
 	font-weight: 500;
 	cursor: pointer;
 	transition: all 0.3s;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.btn .icon {
+	width: 16px;
+	height: 16px;
+	flex: 0 0 auto;
 }
 
 .btn-primary {
@@ -240,12 +250,9 @@ footer {
 	background: rgba(255, 255, 255, 0.3);
 }
 
-.theme-toggle:hover {
-	transform: rotate(15deg);
-}
-
-.lang-toggle:hover {
-	transform: scale(1.1);
+.theme-toggle .icon {
+	width: 20px;
+	height: 20px;
 }
 
 .theme-toggle .icon-sun {
@@ -254,6 +261,10 @@ footer {
 
 .theme-toggle .icon-moon {
 	display: block;
+}
+
+.lang-toggle:hover {
+	transform: scale(1.1);
 }
 
 /* 主题选项样式 */

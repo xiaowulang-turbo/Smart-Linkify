@@ -150,9 +150,40 @@
 						</a>
 					</li>
 					<li>
-						<button class="theme-toggle" title="切换主题">
-							<i class="fas fa-moon"></i>
-							<i class="fas fa-sun"></i>
+						<button
+							class="theme-toggle"
+							data-i18n-title="common.switchTheme"
+							data-i18n-aria-label="common.switchTheme"
+							title="切换主题"
+							aria-label="切换主题"
+						>
+							<svg
+								class="theme-icon theme-icon-moon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+							</svg>
+							<svg
+								class="theme-icon theme-icon-sun"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<circle cx="12" cy="12" r="4" />
+								<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+							</svg>
 						</button>
 					</li>
 					<li>
@@ -176,7 +207,7 @@
 			<div class="container">
 				<div class="privacy-content">
 					<div class="privacy-header">
-						<h1 data-i18n="privacy.title">🔒 隐私政策</h1>
+						<h1 data-i18n="privacy.title">隐私政策</h1>
 						<p class="last-updated" data-i18n="privacy.lastUpdated">
 							最后更新：2026年3月
 						</p>
@@ -190,7 +221,7 @@
 					</div>
 
 					<section class="privacy-section">
-						<h2 data-i18n="privacy.intro.title">📋 概述</h2>
+						<h2 data-i18n="privacy.intro.title">概述</h2>
 						<p data-i18n="privacy.intro.content">
 							智能超链接识别（"本扩展"）是一款开源的 Chrome
 							浏览器扩展，旨在帮助用户自动将网页中的纯文本 URL
@@ -199,7 +230,7 @@
 					</section>
 
 					<section class="privacy-section">
-						<h2 data-i18n="privacy.collect.title">📊 信息收集</h2>
+						<h2 data-i18n="privacy.collect.title">信息收集</h2>
 						<p data-i18n="privacy.collect.content">
 							本扩展不收集任何个人信息或使用数据。具体来说：
 						</p>
@@ -223,7 +254,7 @@
 					</section>
 
 					<section class="privacy-section">
-						<h2 data-i18n="privacy.storage.title">💾 本地存储</h2>
+						<h2 data-i18n="privacy.storage.title">本地存储</h2>
 						<p data-i18n="privacy.storage.content">
 							本扩展仅在您的浏览器本地存储以下设置信息：
 						</p>
@@ -248,7 +279,7 @@
 
 					<section class="privacy-section">
 						<h2 data-i18n="privacy.permissions.title">
-							🔐 权限说明
+							权限说明
 						</h2>
 						<p data-i18n="privacy.permissions.content">
 							本扩展请求以下权限：
@@ -274,7 +305,7 @@
 
 					<section class="privacy-section">
 						<h2 data-i18n="privacy.thirdparty.title">
-							🌐 第三方服务
+							第三方服务
 						</h2>
 						<p data-i18n="privacy.thirdparty.content">
 							本扩展不使用任何第三方分析、广告或追踪服务。扩展的所有功能完全在本地运行，不与任何外部服务器通信。
@@ -283,7 +314,7 @@
 
 					<section class="privacy-section">
 						<h2 data-i18n="privacy.opensource.title">
-							📖 开源透明
+							开源透明
 						</h2>
 						<p data-i18n="privacy.opensource.content">
 							本扩展是完全开源的，源代码托管在 GitHub
@@ -303,14 +334,14 @@
 					</section>
 
 					<section class="privacy-section">
-						<h2 data-i18n="privacy.changes.title">📝 政策更新</h2>
+						<h2 data-i18n="privacy.changes.title">政策更新</h2>
 						<p data-i18n="privacy.changes.content">
 							如果我们对本隐私政策进行重大更改，我们将在此页面上发布更新后的政策，并更新"最后更新"日期。建议您定期查看本页面以了解任何变化。
 						</p>
 					</section>
 
 					<section class="privacy-section">
-						<h2 data-i18n="privacy.contact.title">📧 联系我们</h2>
+						<h2 data-i18n="privacy.contact.title">联系我们</h2>
 						<div class="contact-info">
 							<p data-i18n="privacy.contact.content">
 								如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：

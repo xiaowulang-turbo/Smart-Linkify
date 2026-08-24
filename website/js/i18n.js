@@ -11,6 +11,7 @@ const i18n = {
 			'nav.demo': '演示',
 			'nav.download': '下载',
 			'nav.docs': '文档',
+			'common.switchTheme': '切换主题',
 
 			// Hero 区域
 			'hero.title': '智能超链接识别',
@@ -146,14 +147,14 @@ const i18n = {
 
 			// 隐私政策页面
 			'privacy.page.title': '隐私政策 - 智能超链接识别',
-			'privacy.title': '🔒 隐私政策',
+			'privacy.title': '隐私政策',
 			'privacy.lastUpdated': '最后更新：2026年3月',
 			'privacy.summary':
 				'<strong>简要说明：</strong>智能超链接识别扩展不会收集、存储或传输任何用户数据。所有功能完全在您的浏览器本地运行。',
-			'privacy.intro.title': '📋 概述',
+			'privacy.intro.title': '概述',
 			'privacy.intro.content':
 				'智能超链接识别（"本扩展"）是一款开源的 Chrome 浏览器扩展，旨在帮助用户自动将网页中的纯文本 URL 转换为可点击的超链接。我们非常重视用户隐私，本隐私政策将详细说明我们如何处理您的信息。',
-			'privacy.collect.title': '📊 信息收集',
+			'privacy.collect.title': '信息收集',
 			'privacy.collect.content':
 				'本扩展不收集任何个人信息或使用数据。具体来说：',
 			'privacy.collect.item1': '不收集您的浏览历史',
@@ -161,7 +162,7 @@ const i18n = {
 			'privacy.collect.item3': '不收集任何个人身份信息',
 			'privacy.collect.item4': '不收集设备信息或位置数据',
 			'privacy.collect.item5': '不使用任何分析或追踪服务',
-			'privacy.storage.title': '💾 本地存储',
+			'privacy.storage.title': '本地存储',
 			'privacy.storage.content':
 				'本扩展仅在您的浏览器本地存储以下设置信息：',
 			'privacy.storage.item1': '网站白名单配置',
@@ -170,7 +171,7 @@ const i18n = {
 			'privacy.storage.item4': '界面主题和语言偏好',
 			'privacy.storage.note':
 				'这些数据仅存储在您的本地设备上，不会被传输到任何外部服务器。您可以随时通过浏览器的扩展管理功能清除这些数据。',
-			'privacy.permissions.title': '🔐 权限说明',
+			'privacy.permissions.title': '权限说明',
 			'privacy.permissions.content': '本扩展请求以下权限：',
 			'privacy.permissions.item1':
 				'<strong>activeTab</strong>：允许扩展在当前活动标签页上运行，用于检测和转换文本链接',
@@ -180,17 +181,17 @@ const i18n = {
 				'<strong>所有网址访问权限</strong>：允许扩展在所有网页上运行链接转换功能',
 			'privacy.permissions.note':
 				'这些权限仅用于实现扩展的核心功能，不会被用于收集或传输任何数据。',
-			'privacy.thirdparty.title': '🌐 第三方服务',
+			'privacy.thirdparty.title': '第三方服务',
 			'privacy.thirdparty.content':
 				'本扩展不使用任何第三方分析、广告或追踪服务。扩展的所有功能完全在本地运行，不与任何外部服务器通信。',
-			'privacy.opensource.title': '📖 开源透明',
+			'privacy.opensource.title': '开源透明',
 			'privacy.opensource.content':
 				'本扩展是完全开源的，源代码托管在 GitHub 上。您可以随时审查我们的代码，验证我们的隐私承诺。',
 			'privacy.opensource.link': '查看源代码',
-			'privacy.changes.title': '📝 政策更新',
+			'privacy.changes.title': '政策更新',
 			'privacy.changes.content':
 				'如果我们对本隐私政策进行重大更改，我们将在此页面上发布更新后的政策，并更新"最后更新"日期。建议您定期查看本页面以了解任何变化。',
-			'privacy.contact.title': '📧 联系我们',
+			'privacy.contact.title': '联系我们',
 			'privacy.contact.content':
 				'如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：',
 			'privacy.contact.github': 'GitHub Issues：',
@@ -199,20 +200,20 @@ const i18n = {
 
 			// 文档页面
 			'docs.page.title': '使用文档 - 智能超链接识别',
-			'docs.page.heading': '📖 使用文档',
+			'docs.page.heading': '使用文档',
 			'docs.page.subtitle': '从安装到开发，一站式了解智能超链接识别',
-			'docs.nav.quickstart': '🚀 快速开始',
-			'docs.nav.install': '📦 安装指南',
-			'docs.nav.development': '🔧 开发指南',
+			'docs.nav.quickstart': '快速开始',
+			'docs.nav.install': '安装指南',
+			'docs.nav.development': '开发指南',
 
-			'docs.qs.title': '🚀 快速开始',
+			'docs.qs.title': '快速开始',
 			'docs.qs.intro': '只需三步，即可开始使用智能超链接识别扩展。',
 			'docs.qs.step1': '访问 <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store</a>，点击「添加至 Chrome」安装扩展。',
 			'docs.qs.step2': '打开任意网页，点击工具栏中的扩展图标，开启当前网站的开关。',
 			'docs.qs.step3': '页面中的纯文本 URL 和邮箱地址将自动转换为可点击的超链接，工具栏图标会显示转换数量。',
 			'docs.qs.tip': '<strong>提示：</strong>扩展采用白名单机制，需要手动为每个网站启用。在设置页面可以批量管理已启用的网站，子域名会自动包含。',
 
-			'docs.install.title': '📦 安装指南',
+			'docs.install.title': '安装指南',
 			'docs.install.store.title': '方式一：Chrome Web Store（推荐）',
 			'docs.install.store.step1': '访问 <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store 页面</a>。',
 			'docs.install.store.step2': '点击「添加至 Chrome」按钮，在弹出的对话框中点击「添加扩展程序」。',
@@ -227,7 +228,7 @@ const i18n = {
 			'docs.install.requirements.item1': 'Chrome 88 及以上版本（Manifest V3）',
 			'docs.install.requirements.item2': '兼容基于 Chromium 的浏览器（Edge、Brave 等）',
 
-			'docs.dev.title': '🔧 开发指南',
+			'docs.dev.title': '开发指南',
 			'docs.dev.structure.title': '项目结构',
 			'docs.dev.arch.title': '架构概览',
 			'docs.dev.arch.desc': '扩展基于 Manifest V3，由四个核心模块组成：',
@@ -264,6 +265,7 @@ const i18n = {
 			'nav.demo': 'Demo',
 			'nav.download': 'Download',
 			'nav.docs': 'Docs',
+			'common.switchTheme': 'Switch theme',
 
 			// Hero 区域
 			'hero.title': 'Smart Hyperlink Recognition',
@@ -404,14 +406,14 @@ const i18n = {
 			// Privacy Policy Page
 			'privacy.page.title':
 				'Privacy Policy - Smart Hyperlink Recognition',
-			'privacy.title': '🔒 Privacy Policy',
+			'privacy.title': 'Privacy Policy',
 			'privacy.lastUpdated': 'Last Updated: March 2026',
 			'privacy.summary':
 				'<strong>Summary:</strong> The Smart Hyperlink Recognition extension does not collect, store, or transmit any user data. All features run entirely locally in your browser.',
-			'privacy.intro.title': '📋 Overview',
+			'privacy.intro.title': 'Overview',
 			'privacy.intro.content':
 				'Smart Hyperlink Recognition ("the Extension") is an open-source Chrome browser extension designed to help users automatically convert plain text URLs into clickable hyperlinks. We take user privacy very seriously, and this privacy policy details how we handle your information.',
-			'privacy.collect.title': '📊 Information Collection',
+			'privacy.collect.title': 'Information Collection',
 			'privacy.collect.content':
 				'This extension does not collect any personal information or usage data. Specifically:',
 			'privacy.collect.item1': 'We do not collect your browsing history',
@@ -423,7 +425,7 @@ const i18n = {
 				'We do not collect device information or location data',
 			'privacy.collect.item5':
 				'We do not use any analytics or tracking services',
-			'privacy.storage.title': '💾 Local Storage',
+			'privacy.storage.title': 'Local Storage',
 			'privacy.storage.content':
 				'This extension only stores the following settings locally in your browser:',
 			'privacy.storage.item1': 'Website whitelist configuration',
@@ -432,7 +434,7 @@ const i18n = {
 			'privacy.storage.item4': 'Interface theme and language preferences',
 			'privacy.storage.note':
 				"This data is only stored on your local device and is never transmitted to any external servers. You can clear this data at any time through your browser's extension management.",
-			'privacy.permissions.title': '🔐 Permissions',
+			'privacy.permissions.title': 'Permissions',
 			'privacy.permissions.content':
 				'This extension requests the following permissions:',
 			'privacy.permissions.item1':
@@ -443,17 +445,17 @@ const i18n = {
 				'<strong>All URLs access</strong>: Allows the extension to run link conversion on all web pages',
 			'privacy.permissions.note':
 				'These permissions are only used to implement core extension functionality and will not be used to collect or transmit any data.',
-			'privacy.thirdparty.title': '🌐 Third-Party Services',
+			'privacy.thirdparty.title': 'Third-Party Services',
 			'privacy.thirdparty.content':
 				'This extension does not use any third-party analytics, advertising, or tracking services. All extension features run entirely locally and do not communicate with any external servers.',
-			'privacy.opensource.title': '📖 Open Source Transparency',
+			'privacy.opensource.title': 'Open Source Transparency',
 			'privacy.opensource.content':
 				'This extension is completely open source, with source code hosted on GitHub. You can review our code at any time to verify our privacy commitments.',
 			'privacy.opensource.link': 'View Source Code',
-			'privacy.changes.title': '📝 Policy Updates',
+			'privacy.changes.title': 'Policy Updates',
 			'privacy.changes.content':
 				'If we make significant changes to this privacy policy, we will post the updated policy on this page and update the "Last Updated" date. We recommend checking this page periodically for any changes.',
-			'privacy.contact.title': '📧 Contact Us',
+			'privacy.contact.title': 'Contact Us',
 			'privacy.contact.content':
 				'If you have any questions or suggestions about this privacy policy, please contact us through:',
 			'privacy.contact.github': 'GitHub Issues: ',
@@ -462,20 +464,20 @@ const i18n = {
 
 			// Documentation page
 			'docs.page.title': 'Documentation - Smart Hyperlink Recognition',
-			'docs.page.heading': '📖 Documentation',
+			'docs.page.heading': 'Documentation',
 			'docs.page.subtitle': 'Everything you need from installation to development',
-			'docs.nav.quickstart': '🚀 Quick Start',
-			'docs.nav.install': '📦 Installation',
-			'docs.nav.development': '🔧 Development',
+			'docs.nav.quickstart': 'Quick Start',
+			'docs.nav.install': 'Installation',
+			'docs.nav.development': 'Development',
 
-			'docs.qs.title': '🚀 Quick Start',
+			'docs.qs.title': 'Quick Start',
 			'docs.qs.intro': 'Get started with Smart Hyperlink Recognition in just three steps.',
 			'docs.qs.step1': 'Visit the <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store</a> and click "Add to Chrome" to install.',
 			'docs.qs.step2': 'Open any webpage, click the extension icon in the toolbar, and toggle the switch on for the current site.',
 			'docs.qs.step3': 'Plain text URLs and email addresses on the page will be automatically converted to clickable hyperlinks. The toolbar icon shows the conversion count.',
 			'docs.qs.tip': '<strong>Tip:</strong> The extension uses a whitelist model — you need to manually enable it for each site. Manage enabled sites in the settings page. Subdomains are included automatically.',
 
-			'docs.install.title': '📦 Installation Guide',
+			'docs.install.title': 'Installation Guide',
 			'docs.install.store.title': 'Option 1: Chrome Web Store (Recommended)',
 			'docs.install.store.step1': 'Visit the <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store page</a>.',
 			'docs.install.store.step2': 'Click "Add to Chrome", then click "Add extension" in the confirmation dialog.',
@@ -490,7 +492,7 @@ const i18n = {
 			'docs.install.requirements.item1': 'Chrome 88 or later (Manifest V3)',
 			'docs.install.requirements.item2': 'Compatible with Chromium-based browsers (Edge, Brave, etc.)',
 
-			'docs.dev.title': '🔧 Development Guide',
+			'docs.dev.title': 'Development Guide',
 			'docs.dev.structure.title': 'Project Structure',
 			'docs.dev.arch.title': 'Architecture Overview',
 			'docs.dev.arch.desc': 'The extension is built on Manifest V3 with four core modules:',
@@ -584,6 +586,18 @@ const i18n = {
 			const translation = this.t(key)
 			if (translation) {
 				el.title = translation
+			}
+		})
+
+		// 更新 aria-label 属性
+		const ariaLabels = document.querySelectorAll(
+			'[data-i18n-aria-label]'
+		)
+		ariaLabels.forEach((el) => {
+			const key = el.getAttribute('data-i18n-aria-label')
+			const translation = this.t(key)
+			if (translation) {
+				el.setAttribute('aria-label', translation)
 			}
 		})
 	},

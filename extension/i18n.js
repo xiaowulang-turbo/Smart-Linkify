@@ -10,13 +10,13 @@ const i18n = {
 			'popup.status.enabled': '已启用',
 			'popup.status.disabled': '未启用',
 			'popup.status.unsupported': '不支持',
-			'popup.info.convert': '🔗 自动将纯文本 URL 转换为可点击链接',
-			'popup.info.dynamic': '⚡ 支持动态内容实时处理',
-			'popup.hint.enable': '💡 点击开关为当前网站启用链接转换',
-			'popup.hint.unsupported': '⚠️ 此页面不支持链接转换',
+			'popup.info.convert': '自动将纯文本 URL 转换为可点击链接',
+			'popup.info.dynamic': '支持动态内容实时处理',
+			'popup.hint.enable': '点击开关为当前网站启用链接转换',
+			'popup.hint.unsupported': '此页面不支持链接转换',
 			'popup.stats.converted': '链接已转换',
-			'popup.btn.settings': '⚙️ 设置',
-			'popup.btn.refresh': '🔄 刷新页面',
+			'popup.btn.settings': '设置',
+			'popup.btn.refresh': '刷新页面',
 
 		// Options 页面
 		'options.title': '智能超链接识别 - 设置',
@@ -31,37 +31,37 @@ const i18n = {
 		// 外观设置
 		'options.appearance.title': '外观设置',
 			'options.appearance.theme': '主题模式',
-			'options.appearance.theme.auto': '💻 跟随系统',
-			'options.appearance.theme.light': '☀️ 浅色模式',
-			'options.appearance.theme.dark': '🌙 深色模式',
+			'options.appearance.theme.auto': '跟随系统',
+			'options.appearance.theme.light': '浅色模式',
+			'options.appearance.theme.dark': '深色模式',
 			'options.appearance.theme.desc':
 				'选择插件界面的主题模式，"跟随系统"将自动适配您的操作系统设置',
 			'options.appearance.lang': '界面语言',
-			'options.appearance.lang.auto': '🌐 自动检测',
-			'options.appearance.lang.zh': '🇨🇳 简体中文',
-			'options.appearance.lang.en': '🇺🇸 English',
+			'options.appearance.lang.auto': '自动检测',
+			'options.appearance.lang.zh': '简体中文',
+			'options.appearance.lang.en': 'English',
 			'options.appearance.lang.desc':
 				'选择插件界面语言，"自动检测"将根据浏览器语言自动选择',
 
 			// 白名单
-			'options.whitelist.title': '✅ 已启用的网站',
+			'options.whitelist.title': '已启用的网站',
 			'options.whitelist.desc':
 				'仅在以下网站上启用链接转换功能（每行一个域名）',
 			'options.whitelist.placeholder':
 				'例如：\ngithub.com\nstackoverflow.com\nexample.com',
 			'options.whitelist.hint':
-				'💡 提示：只需输入域名，子域名将自动包含（如输入 github.com 也会匹配 docs.github.com）',
+				'提示：只需输入域名，子域名将自动包含（如输入 github.com 也会匹配 docs.github.com）',
 
 			// 排除标签
-			'options.excludedTags.title': '🏷️ 排除的 HTML 标签',
+			'options.excludedTags.title': '排除的 HTML 标签',
 			'options.excludedTags.desc':
 				'以下标签内的文本不会被转换（用逗号分隔）',
 			'options.excludedTags.placeholder': 'SCRIPT, STYLE, PRE, CODE, A',
 			'options.excludedTags.hint':
-				'💡 默认排除：SCRIPT, STYLE, NOSCRIPT, TEXTAREA, PRE, CODE, A',
+				'默认排除：SCRIPT, STYLE, NOSCRIPT, TEXTAREA, PRE, CODE, A',
 
 			// URL匹配设置
-			'options.urlMatch.title': '🔗 URL 匹配设置',
+			'options.urlMatch.title': 'URL 匹配设置',
 			'options.urlMatch.desc': '配置 URL 识别的精确程度',
 			'options.urlMatch.strictMode': '启用精确匹配模式',
 			'options.urlMatch.strictMode.desc': '启用后可减少版本号、统计数据等误匹配',
@@ -73,15 +73,15 @@ const i18n = {
 			'options.about.desc': '是一款高效的 Chrome 浏览器扩展程序。',
 			'options.about.name': '智能超链接识别',
 			'options.about.feature1':
-				'✨ 自动将网页中的纯文本 URL 转换为可点击的超链接',
-			'options.about.feature2': '⚡ 支持动态内容实时处理',
-			'options.about.feature3': '🔒 所有操作在本地完成，不收集任何数据',
+				'自动将网页中的纯文本 URL 转换为可点击的超链接',
+			'options.about.feature2': '支持动态内容实时处理',
+			'options.about.feature3': '所有操作在本地完成，不收集任何数据',
 
 			// 按钮
-			'options.btn.save': '💾 保存设置',
-			'options.btn.reset': '🔄 恢复默认',
-			'options.status.saved': '✅ 设置已保存！',
-			'options.status.reset': '🔄 已恢复默认设置',
+			'options.btn.save': '保存设置',
+			'options.btn.reset': '恢复默认',
+			'options.status.saved': '设置已保存！',
+			'options.status.reset': '已恢复默认设置',
 			'options.confirm.reset': '确定要恢复默认设置吗？',
 
 // 通用
@@ -89,7 +89,7 @@ const i18n = {
 			'common.switchLang': '切换语言',
 
 			// 欢迎页面
-			'welcome.title': '✍️ 欢迎使用',
+			'welcome.title': '欢迎使用',
 			'welcome.subtitle': '智能超链接识别 (Smart Text-to-Link Converter)',
 			'welcome.feature1.title': '智能文本链接转换',
 			'welcome.feature1.desc': '自动识别并转换网页中的纯文本 URL，让所有链接都可以直接点击，无需复制粘贴。',
@@ -99,15 +99,15 @@ const i18n = {
 			'welcome.feature3.desc': '自动跳过代码块、已有链接等特殊区域，避免破坏页面原有结构和样式。',
 			'welcome.feature4.title': '安全与隐私',
 			'welcome.feature4.desc': '所有操作都在本地完成，不收集任何数据，不影响浏览速度。',
-			'welcome.demo.title': '📝 示例演示',
+			'welcome.demo.title': '示例演示',
 			'welcome.demo.text1': '访问我们的官网',
 			'welcome.demo.text2': '了解更多功能',
 			'welcome.demo.text3': '项目开源地址',
-			'welcome.demo.text4': '欢迎 Star ⭐',
-			'welcome.demo.hint': '💡 以上文本中的 URL 已自动转换为可点击的链接！',
+			'welcome.demo.text4': '欢迎 Star',
+			'welcome.demo.hint': '以上文本中的 URL 已自动转换为可点击的链接！',
 			'welcome.cta.text': '插件已安装成功，现在就开始使用吧！',
-			'welcome.cta.start': '🚀 开始使用',
-			'welcome.cta.settings': '⚙️ 前往设置',
+			'welcome.cta.start': '开始使用',
+			'welcome.cta.settings': '前往设置',
 		},
 		en: {
 			// Popup 页面
@@ -117,14 +117,14 @@ const i18n = {
 			'popup.status.disabled': 'Not Enabled',
 			'popup.status.unsupported': 'Not Supported',
 			'popup.info.convert':
-				'🔗 Auto-convert plain text URLs to clickable links',
+				'Auto-convert plain text URLs to clickable links',
 			'popup.info.dynamic':
-				'⚡ Support real-time processing of dynamic content',
-			'popup.hint.enable': '💡 Toggle the switch to enable link conversion for this site',
-			'popup.hint.unsupported': '⚠️ Link conversion is not supported on this page',
+				'Support real-time processing of dynamic content',
+			'popup.hint.enable': 'Toggle the switch to enable link conversion for this site',
+			'popup.hint.unsupported': 'Link conversion is not supported on this page',
 			'popup.stats.converted': 'Links Converted',
-			'popup.btn.settings': '⚙️ Settings',
-			'popup.btn.refresh': '🔄 Refresh Page',
+			'popup.btn.settings': 'Settings',
+			'popup.btn.refresh': 'Refresh Page',
 
 		// Options 页面
 		'options.title': 'Smart Hyperlink - Settings',
@@ -139,15 +139,15 @@ const i18n = {
 		// 外观设置
 		'options.appearance.title': 'Appearance',
 			'options.appearance.theme': 'Theme Mode',
-			'options.appearance.theme.auto': '💻 System',
-			'options.appearance.theme.light': '☀️ Light',
-			'options.appearance.theme.dark': '🌙 Dark',
+			'options.appearance.theme.auto': 'System',
+			'options.appearance.theme.light': 'Light',
+			'options.appearance.theme.dark': 'Dark',
 			'options.appearance.theme.desc':
 				'Choose theme mode. "System" will follow your OS settings',
 			'options.appearance.lang': 'Language',
-			'options.appearance.lang.auto': '🌐 Auto Detect',
-			'options.appearance.lang.zh': '🇨🇳 简体中文',
-			'options.appearance.lang.en': '🇺🇸 English',
+			'options.appearance.lang.auto': 'Auto Detect',
+			'options.appearance.lang.zh': '简体中文',
+			'options.appearance.lang.en': 'English',
 			'options.appearance.lang.desc':
 				'Choose interface language. "Auto Detect" will follow browser language',
 
@@ -158,7 +158,7 @@ const i18n = {
 			'options.whitelist.placeholder':
 				'Example:\ngithub.com\nstackoverflow.com\nexample.com',
 			'options.whitelist.hint':
-				'💡 Tip: Enter domain name only. Subdomains are included automatically (e.g. github.com also matches docs.github.com)',
+				'Tip: Enter domain name only. Subdomains are included automatically (e.g. github.com also matches docs.github.com)',
 
 		// 排除标签
 		'options.excludedTags.title': 'Excluded HTML Tags',
@@ -166,7 +166,7 @@ const i18n = {
 				'Text inside these tags will not be converted (comma separated)',
 			'options.excludedTags.placeholder': 'SCRIPT, STYLE, PRE, CODE, A',
 			'options.excludedTags.hint':
-				'💡 Default excluded: SCRIPT, STYLE, NOSCRIPT, TEXTAREA, PRE, CODE, A',
+				'Default excluded: SCRIPT, STYLE, NOSCRIPT, TEXTAREA, PRE, CODE, A',
 
 		// URL匹配设置
 		'options.urlMatch.title': 'URL Match Settings',
@@ -181,17 +181,17 @@ const i18n = {
 			'options.about.desc': 'is an efficient Chrome browser extension.',
 			'options.about.name': 'Smart Hyperlink Recognition',
 			'options.about.feature1':
-				'✨ Automatically convert plain text URLs to clickable hyperlinks',
+				'Automatically convert plain text URLs to clickable hyperlinks',
 			'options.about.feature2':
-				'⚡ Support real-time processing of dynamic content',
+				'Support real-time processing of dynamic content',
 			'options.about.feature3':
-				'🔒 All operations are done locally, no data collection',
+				'All operations are done locally, no data collection',
 
 			// 按钮
-			'options.btn.save': '💾 Save Settings',
-			'options.btn.reset': '🔄 Reset Default',
-			'options.status.saved': '✅ Settings saved!',
-			'options.status.reset': '🔄 Default settings restored',
+			'options.btn.save': 'Save Settings',
+			'options.btn.reset': 'Reset Default',
+			'options.status.saved': 'Settings saved!',
+			'options.status.reset': 'Default settings restored',
 			'options.confirm.reset':
 				'Are you sure you want to reset to default settings?',
 
@@ -200,7 +200,7 @@ const i18n = {
 			'common.switchLang': 'Switch Language',
 
 			// 欢迎页面
-			'welcome.title': '✍️ Welcome',
+			'welcome.title': 'Welcome',
 			'welcome.subtitle': 'Smart Text-to-Link Converter',
 			'welcome.feature1.title': 'Smart Link Conversion',
 			'welcome.feature1.desc': 'Automatically detect and convert plain text URLs into clickable links, no more copy-paste.',
@@ -210,15 +210,15 @@ const i18n = {
 			'welcome.feature3.desc': 'Automatically skips code blocks, existing links and other special areas to avoid breaking page structure.',
 			'welcome.feature4.title': 'Security & Privacy',
 			'welcome.feature4.desc': 'All operations are done locally, no data collection, no impact on browsing speed.',
-			'welcome.demo.title': '📝 Demo',
+			'welcome.demo.title': 'Demo',
 			'welcome.demo.text1': 'Visit our website',
 			'welcome.demo.text2': 'to learn more',
 			'welcome.demo.text3': 'Open source at',
-			'welcome.demo.text4': 'Welcome to Star ⭐',
-			'welcome.demo.hint': '💡 The URLs above have been automatically converted to clickable links!',
+			'welcome.demo.text4': 'Welcome to Star',
+			'welcome.demo.hint': 'The URLs above have been automatically converted to clickable links!',
 			'welcome.cta.text': 'Extension installed successfully, start using it now!',
-			'welcome.cta.start': '🚀 Get Started',
-			'welcome.cta.settings': '⚙️ Settings',
+			'welcome.cta.start': 'Get Started',
+			'welcome.cta.settings': 'Settings',
 		},
 	},
 
@@ -302,6 +302,18 @@ const i18n = {
 			const translation = this.t(key)
 			if (translation) {
 				el.title = translation
+			}
+		})
+
+		// 更新 aria-label 属性
+		const ariaLabels = document.querySelectorAll(
+			'[data-i18n-aria-label]'
+		)
+		ariaLabels.forEach((el) => {
+			const key = el.getAttribute('data-i18n-aria-label')
+			const translation = this.t(key)
+			if (translation) {
+				el.setAttribute('aria-label', translation)
 			}
 		})
 	},

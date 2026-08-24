@@ -1044,28 +1044,33 @@ body {
 	color: var(--color-text);
 }
 
-.theme-toggle .fa-sun {
+.theme-toggle .theme-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.theme-toggle .theme-icon-sun {
 	display: none;
 }
 
-.theme-toggle .fa-moon {
+.theme-toggle .theme-icon-moon {
 	display: block;
 }
 
-[data-theme='dark'] .theme-toggle .fa-sun {
+[data-theme='dark'] .theme-toggle .theme-icon-sun {
 	display: block;
 }
 
-[data-theme='dark'] .theme-toggle .fa-moon {
+[data-theme='dark'] .theme-toggle .theme-icon-moon {
 	display: none;
 }
 
 @media (prefers-color-scheme: dark) {
-	html:not([data-theme='light']) .theme-toggle .fa-sun {
+	html:not([data-theme='light']) .theme-toggle .theme-icon-sun {
 		display: block;
 	}
 
-	html:not([data-theme='light']) .theme-toggle .fa-moon {
+	html:not([data-theme='light']) .theme-toggle .theme-icon-moon {
 		display: none;
 	}
 }

@@ -11,7 +11,7 @@
 		"message": "Options"
 	},
 	"options_urlMatch_title": {
-		"message": "🔗 URL Match Settings"
+		"message": "URL Match Settings"
 	},
 	"options_urlMatch_desc": {
 		"message": "Configure URL recognition accuracy"
