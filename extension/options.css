@@ -158,12 +158,14 @@ footer {
 	align-items: center;
 	justify-content: center;
 	gap: 6px;
+	line-height: 1;
 }
 
 .btn .icon {
 	width: 16px;
 	height: 16px;
 	flex: 0 0 auto;
+	display: block;
 }
 
 .btn-primary {
