@@ -45,17 +45,11 @@ body {
 .domain-section {
 	display: flex;
 	align-items: center;
-	gap: 8px;
 	padding: 12px 15px;
 	background: #f0f5ff;
 	border-radius: 8px;
 	margin-bottom: 15px;
 	border: 1px solid #dbeafe;
-}
-
-.domain-icon {
-	font-size: 18px;
-	flex-shrink: 0;
 }
 
 .domain-name {
@@ -223,6 +217,16 @@ input:disabled + .slider {
 	cursor: pointer;
 	transition: all 0.3s;
 	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.btn .icon {
+	width: 15px;
+	height: 15px;
+	flex: 0 0 auto;
 }
 
 .btn:hover {
@@ -268,12 +272,9 @@ input:disabled + .slider {
 	background: rgba(255, 255, 255, 0.3);
 }
 
-.theme-toggle:hover {
-	transform: rotate(15deg);
-}
-
-.lang-toggle:hover {
-	transform: scale(1.1);
+.theme-toggle .icon {
+	width: 18px;
+	height: 18px;
 }
 
 .theme-toggle .icon-sun {
@@ -282,6 +283,10 @@ input:disabled + .slider {
 
 .theme-toggle .icon-moon {
 	display: block;
+}
+
+.lang-toggle:hover {
+	transform: scale(1.1);
 }
 
 /* 暗黑主题 */

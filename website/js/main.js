@@ -251,6 +251,6 @@ document.querySelectorAll('.btn').forEach((btn) => {
 
 // 页面加载完成
 window.addEventListener('load', () => {
-	console.log('✍️ 智能超链接识别官网已加载')
+	console.log('智能超链接识别官网已加载')
 	trackEvent('Page', 'Load', 'Homepage')
 })
