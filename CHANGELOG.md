@@ -1,5 +1,23 @@
 # 更新日志
 
+## [1.0.5] - 2026-08-25
+
+### 界面改进
+
+-   将 Popup、Options、Welcome 页面的 emoji 图标替换为 SVG，提升清晰度与一致性
+-   修复按钮图标与标签的垂直对齐
+-   统一英文产品名为 Smart Linkify – Instant hyperlink conversion
+
+### 官网
+
+-   重构样式系统，对齐设计 token
+-   新增更新日志页与统一文档页
+-   仓库与官网地址更新为 Smart-Linkify / smart-linkify.vercel.app
+
+### 技术改进
+
+-   以 `package.json` 为唯一版本来源，自动同步 `manifest.json` 与 README 版本徽章
+
 ## [1.0.4] - 2026-03-28
 
 ### 新增功能
