@@ -1,7 +1,7 @@
 # ✍️ Smart Linkify – Instant hyperlink conversion
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome)](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition)
-[![Version](https://img.shields.io/badge/Version-1.0.4-blue)](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/releases)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome)](https://github.com/xiaowulang-turbo/Smart-Linkify)
+[![Version](https://img.shields.io/badge/Version-1.0.4-blue)](https://github.com/xiaowulang-turbo/Smart-Linkify/releases)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 > 🌐 [简体中文](README.zh-CN.md) | English
@@ -25,7 +25,7 @@ No more copying and pasting text links into the address bar! This extension make
 
 ## 🌐 Official Website
 
-Visit our website for more information: [https://smart-hyperlink-recognition.vercel.app/](https://smart-hyperlink-recognition.vercel.app/)
+Visit our website for more information: [https://smart-linkify.vercel.app/](https://smart-linkify.vercel.app/)
 
 Website source code is located in the `website/` directory.
 
@@ -42,7 +42,7 @@ Website source code is located in the `website/` directory.
 1. Clone or download this repository:
 
     ```bash
-    git clone https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition.git
+    git clone https://github.com/xiaowulang-turbo/Smart-Linkify.git
     ```
 
 2. Open `chrome://extensions` in Chrome browser
@@ -95,8 +95,8 @@ All forms of contributions are welcome! If you want to participate in project de
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition.git
-    cd SmartHyperlinkRecognition
+    git clone https://github.com/xiaowulang-turbo/Smart-Linkify.git
+    cd Smart-Linkify
     ```
 
 2. **Load in Chrome:**
@@ -112,7 +112,7 @@ All forms of contributions are welcome! If you want to participate in project de
 ### Project Structure
 
 ```
-SmartHyperlinkRecognition/
+Smart-Linkify/
 ├── extension/            # Chrome Extension
 │   ├── manifest.json    # Extension configuration
 │   ├── background.js    # Background service script
@@ -209,8 +209,8 @@ Thanks to all developers and users who have contributed to this project!
 
 ## 📞 Contact
 
--   **Project Homepage:** [GitHub Repository](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition)
--   **Issue Tracker:** [GitHub Issues](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/issues)
+-   **Project Homepage:** [GitHub Repository](https://github.com/xiaowulang-turbo/Smart-Linkify)
+-   **Issue Tracker:** [GitHub Issues](https://github.com/xiaowulang-turbo/Smart-Linkify/issues)
 -   **Feature Requests:** Welcome to share your ideas via Issues
 
 ---

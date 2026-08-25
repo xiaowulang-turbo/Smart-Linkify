@@ -14,12 +14,12 @@
 - `test.html` 中的测试页标题
 - `LICENSE` 中的版权名称
 
-保留以下技术标识不变：
+同步更新以下项目标识：
 
-- 中文产品名称及中文翻译文本
-- GitHub 仓库名 `SmartHyperlinkRecognition`
-- 官网 URL `smart-hyperlink-recognition.vercel.app`
-- 仅描述功能而非产品名称的英文句子，例如扩展 description
+- GitHub 仓库 slug 为 `Smart-Linkify`
+- 官网 URL 为 `smart-linkify.vercel.app`
+
+保留中文产品名称、中文翻译文本，以及仅描述功能而非产品名称的英文句子，例如扩展 description。
 
 ## Implementation
 
@@ -27,7 +27,7 @@
 
 - `Smart Text-to-Link Converter` 作为产品名时替换为新标题
 - `Smart Hyperlink Recognition` 作为英文产品名时替换为新标题
-- 不修改 URL、仓库名及中文上下文中的历史英文括注，以避免改变技术链接和中文内容范围
+- 不修改仅描述功能的文案及中文产品名称；所有仓库链接、官网链接和相关路径统一使用新标识
 
 替换后再次检索两类旧产品名，确保用户可见范围不再残留；检查新标题在 README、官网英文文案和扩展英文界面中均可找到。
 
