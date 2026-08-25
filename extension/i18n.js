@@ -6,7 +6,7 @@ const i18n = {
 		'zh-CN': {
 			// Popup 页面
 			'popup.title': '智能超链接识别',
-			'popup.subtitle': 'Smart Text-to-Link Converter',
+			'popup.subtitle': 'Smart Linkify – Instant hyperlink conversion',
 			'popup.status.enabled': '已启用',
 			'popup.status.disabled': '未启用',
 			'popup.status.unsupported': '不支持',
@@ -20,7 +20,7 @@ const i18n = {
 
 		// Options 页面
 		'options.title': '智能超链接识别 - 设置',
-		'options.subtitle': 'Smart Text-to-Link Converter Settings',
+		'options.subtitle': 'Smart Linkify – Instant hyperlink conversion Settings',
 
 		// 基本设置
 		'options.basic.title': '基本设置',
@@ -90,7 +90,7 @@ const i18n = {
 
 			// 欢迎页面
 			'welcome.title': '欢迎使用',
-			'welcome.subtitle': '智能超链接识别 (Smart Text-to-Link Converter)',
+			'welcome.subtitle': '智能超链接识别 (Smart Linkify – Instant hyperlink conversion)',
 			'welcome.feature1.title': '智能文本链接转换',
 			'welcome.feature1.desc': '自动识别并转换网页中的纯文本 URL，让所有链接都可以直接点击，无需复制粘贴。',
 			'welcome.feature2.title': '实时动态处理',
@@ -111,8 +111,8 @@ const i18n = {
 		},
 		en: {
 			// Popup 页面
-			'popup.title': 'Smart Hyperlink',
-			'popup.subtitle': 'Smart Text-to-Link Converter',
+			'popup.title': 'Smart Linkify – Instant hyperlink conversion',
+			'popup.subtitle': 'Smart Linkify – Instant hyperlink conversion',
 			'popup.status.enabled': 'Enabled',
 			'popup.status.disabled': 'Not Enabled',
 			'popup.status.unsupported': 'Not Supported',
@@ -127,8 +127,8 @@ const i18n = {
 			'popup.btn.refresh': 'Refresh Page',
 
 		// Options 页面
-		'options.title': 'Smart Hyperlink - Settings',
-		'options.subtitle': 'Smart Text-to-Link Converter Settings',
+			'options.title': 'Smart Linkify – Instant hyperlink conversion - Settings',
+			'options.subtitle': 'Smart Linkify – Instant hyperlink conversion Settings',
 
 		// 基本设置
 		'options.basic.title': 'Basic Settings',
@@ -179,7 +179,7 @@ const i18n = {
 		// 关于
 		'options.about.title': 'About',
 			'options.about.desc': 'is an efficient Chrome browser extension.',
-			'options.about.name': 'Smart Hyperlink Recognition',
+			'options.about.name': 'Smart Linkify – Instant hyperlink conversion',
 			'options.about.feature1':
 				'Automatically convert plain text URLs to clickable hyperlinks',
 			'options.about.feature2':
@@ -201,7 +201,7 @@ const i18n = {
 
 			// 欢迎页面
 			'welcome.title': 'Welcome',
-			'welcome.subtitle': 'Smart Text-to-Link Converter',
+			'welcome.subtitle': 'Smart Linkify – Instant hyperlink conversion',
 			'welcome.feature1.title': 'Smart Link Conversion',
 			'welcome.feature1.desc': 'Automatically detect and convert plain text URLs into clickable links, no more copy-paste.',
 			'welcome.feature2.title': 'Real-time Processing',

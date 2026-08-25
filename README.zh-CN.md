@@ -1,4 +1,4 @@
-# ✍️ 智能超链接识别 (Smart Text-to-Link Converter)
+# ✍️ 智能超链接识别 (Smart Linkify – Instant hyperlink conversion)
 
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome)](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition)
 [![Version](https://img.shields.io/badge/Version-1.0.4-blue)](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/releases)
@@ -8,7 +8,7 @@
 
 ## ✨ 简介
 
-**智能超链接识别 (Smart Text-to-Link Converter)** 是一款高效的 Chrome 浏览器扩展程序，其核心功能是**扫描并自动将网页内容中以纯文本形式存在的 URL 字符串（如 `http://example.com` 或 `www.google.com`）转换为可点击的 HTML 超链接 (`<a>` 标签）**。
+**智能超链接识别 (Smart Linkify – Instant hyperlink conversion)** 是一款高效的 Chrome 浏览器扩展程序，其核心功能是**扫描并自动将网页内容中以纯文本形式存在的 URL 字符串（如 `http://example.com` 或 `www.google.com`）转换为可点击的 HTML 超链接 (`<a>` 标签）**。
 
 不再需要手动复制粘贴文本链接到地址栏！本插件让您的浏览体验更加顺畅，所有可见的链接都将立即变得可点击。
 
@@ -182,7 +182,7 @@ SmartHyperlinkRecognition/
 ```
 MIT License
 
-Copyright (c) 2024 Smart Text-to-Link Converter
+Copyright (c) 2024 Smart Linkify – Instant hyperlink conversion
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -217,5 +217,5 @@ SOFTWARE.
 
 <div align="center">
   <p>如果这个项目对您有帮助，请给我们一个 ⭐️ Star！</p>
-  <p>Made with ❤️ by Smart Text-to-Link Converter Team</p>
+  <p>Made with ❤️ by Smart Linkify – Instant hyperlink conversion Team</p>
 </div>

@@ -1,4 +1,4 @@
-# ✍️ Smart Text-to-Link Converter
+# ✍️ Smart Linkify – Instant hyperlink conversion
 
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome)](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition)
 [![Version](https://img.shields.io/badge/Version-1.0.4-blue)](https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/releases)
@@ -8,7 +8,7 @@
 
 ## ✨ Introduction
 
-**Smart Text-to-Link Converter** is an efficient Chrome browser extension that automatically **scans and converts plain text URLs (like `http://example.com` or `www.google.com`) into clickable HTML hyperlinks (`<a>` tags)**.
+**Smart Linkify – Instant hyperlink conversion** is an efficient Chrome browser extension that automatically **scans and converts plain text URLs (like `http://example.com` or `www.google.com`) into clickable HTML hyperlinks (`<a>` tags)**.
 
 No more copying and pasting text links into the address bar! This extension makes your browsing experience smoother, making all visible links instantly clickable.
 
@@ -182,7 +182,7 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) file 
 ```
 MIT License
 
-Copyright (c) 2024 Smart Text-to-Link Converter
+Copyright (c) 2024 Smart Linkify – Instant hyperlink conversion
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -217,5 +217,5 @@ Thanks to all developers and users who have contributed to this project!
 
 <div align="center">
   <p>If this project helps you, please give us a ⭐️ Star!</p>
-  <p>Made with ❤️ by Smart Text-to-Link Converter Team</p>
+  <p>Made with ❤️ by Smart Linkify – Instant hyperlink conversion Team</p>
 </div>
