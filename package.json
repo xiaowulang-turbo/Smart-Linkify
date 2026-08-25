@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition.git"
+		"url": "https://github.com/xiaowulang-turbo/Smart-Linkify.git"
 	},
 	"keywords": [
 		"linkify",
@@ -31,8 +31,8 @@
 	"engines": {
 		"chrome": ">=88.0.0"
 	},
-	"homepage": "https://smart-hyperlink-recognition.vercel.app/",
+	"homepage": "https://smart-linkify.vercel.app/",
 	"bugs": {
-		"url": "https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/issues"
+		"url": "https://github.com/xiaowulang-turbo/Smart-Linkify/issues"
 	}
 }

@@ -192,4 +192,4 @@ MIT License - 详见 [LICENSE](../LICENSE) 文件
 
 ---
 
-Made with ❤️ by Smart Text-to-Link Converter Team
+Made with ❤️ by Smart Linkify – Instant hyperlink conversion Team

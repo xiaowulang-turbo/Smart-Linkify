@@ -122,6 +122,6 @@
 
 如有问题或建议，请访问：
 
--   官网：https://smart-hyperlink-recognition.vercel.app/
+-   官网：https://smart-linkify.vercel.app/
 -   问题反馈
-    ：https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/issues
+    ：https://github.com/xiaowulang-turbo/Smart-Linkify/issues

@@ -15,7 +15,7 @@ const i18n = {
 
 			// Hero 区域
 			'hero.title': '智能超链接识别',
-			'hero.subtitle': 'Smart Text-to-Link Converter',
+			'hero.subtitle': 'Smart Linkify – Instant hyperlink conversion',
 			'hero.description':
 				'自动将网页中的纯文本 URL 转换为可点击的超链接<br>让您的浏览体验更加顺畅，告别复制粘贴！',
 			'hero.download': '立即下载',
@@ -142,7 +142,7 @@ const i18n = {
 			'footer.contribute': '贡献指南',
 			'footer.conduct': '行为准则',
 			'footer.copyright':
-				'© 2024-2026 Smart Text-to-Link Converter. 保留所有权利。',
+				'© 2024-2026 Smart Linkify – Instant hyperlink conversion. 保留所有权利。',
 			'footer.mit': '基于 MIT 许可证发布',
 
 			// 隐私政策页面
@@ -219,7 +219,7 @@ const i18n = {
 			'docs.install.store.step2': '点击「添加至 Chrome」按钮，在弹出的对话框中点击「添加扩展程序」。',
 			'docs.install.store.step3': '安装完成后，工具栏会出现扩展图标，后续版本将自动更新。',
 			'docs.install.github.title': '方式二：GitHub Release',
-			'docs.install.github.step1': '前往 <a href="https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/releases" target="_blank">GitHub Releases</a> 下载最新版本的 ZIP 文件并解压。',
+			'docs.install.github.step1': '前往 <a href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank">GitHub Releases</a> 下载最新版本的 ZIP 文件并解压。',
 			'docs.install.github.step2': '在 Chrome 地址栏输入 <code>chrome://extensions</code>，开启右上角的「开发者模式」。',
 			'docs.install.github.step3': '点击「加载已解压的扩展程序」，选择解压后的 <code>extension</code> 文件夹。',
 			'docs.install.dev.title': '方式三：开发者模式',
@@ -259,7 +259,7 @@ const i18n = {
 		},
 		en: {
 			// 导航栏
-			'nav.brand': 'Smart Hyperlink',
+			'nav.brand': 'Smart Linkify – Instant hyperlink conversion',
 			'nav.home': 'Home',
 			'nav.features': 'Features',
 			'nav.demo': 'Demo',
@@ -268,8 +268,8 @@ const i18n = {
 			'common.switchTheme': 'Switch theme',
 
 			// Hero 区域
-			'hero.title': 'Smart Hyperlink Recognition',
-			'hero.subtitle': 'Smart Text-to-Link Converter',
+			'hero.title': 'Smart Linkify – Instant hyperlink conversion',
+			'hero.subtitle': 'Smart Linkify – Instant hyperlink conversion',
 			'hero.description':
 				'Automatically convert plain text URLs into clickable hyperlinks<br>Make your browsing experience smoother, say goodbye to copy-paste!',
 			'hero.download': 'Download Now',
@@ -278,7 +278,7 @@ const i18n = {
 			'hero.free': 'Free',
 			'hero.opensource': 'Open Source',
 			'hero.license': 'License',
-			'hero.extension.name': 'Smart Hyperlink Recognition',
+			'hero.extension.name': 'Smart Linkify – Instant hyperlink conversion',
 			'hero.extension.desc':
 				'Auto-convert plain text URLs to clickable links',
 			'hero.extension.enabled': 'Enabled',
@@ -338,7 +338,7 @@ const i18n = {
 
 			// 下载安装
 			'download.title': 'Download',
-			'download.subtitle': 'Get started with Smart Hyperlink Recognition',
+			'download.subtitle': 'Get started with Smart Linkify – Instant hyperlink conversion',
 			'download.chrome.title': 'Chrome Web Store',
 			'download.chrome.desc':
 				'Recommended, one-click install, auto update',
@@ -400,19 +400,19 @@ const i18n = {
 			'footer.contribute': 'Contributing',
 			'footer.conduct': 'Code of Conduct',
 			'footer.copyright':
-				'© 2024-2026 Smart Text-to-Link Converter. All rights reserved.',
+				'© 2024-2026 Smart Linkify – Instant hyperlink conversion. All rights reserved.',
 			'footer.mit': 'Released under the MIT License',
 
 			// Privacy Policy Page
 			'privacy.page.title':
-				'Privacy Policy - Smart Hyperlink Recognition',
+				'Privacy Policy - Smart Linkify – Instant hyperlink conversion',
 			'privacy.title': 'Privacy Policy',
 			'privacy.lastUpdated': 'Last Updated: March 2026',
 			'privacy.summary':
-				'<strong>Summary:</strong> The Smart Hyperlink Recognition extension does not collect, store, or transmit any user data. All features run entirely locally in your browser.',
+				'<strong>Summary:</strong> The Smart Linkify – Instant hyperlink conversion extension does not collect, store, or transmit any user data. All features run entirely locally in your browser.',
 			'privacy.intro.title': 'Overview',
 			'privacy.intro.content':
-				'Smart Hyperlink Recognition ("the Extension") is an open-source Chrome browser extension designed to help users automatically convert plain text URLs into clickable hyperlinks. We take user privacy very seriously, and this privacy policy details how we handle your information.',
+				'Smart Linkify – Instant hyperlink conversion ("the Extension") is an open-source Chrome browser extension designed to help users automatically convert plain text URLs into clickable hyperlinks. We take user privacy very seriously, and this privacy policy details how we handle your information.',
 			'privacy.collect.title': 'Information Collection',
 			'privacy.collect.content':
 				'This extension does not collect any personal information or usage data. Specifically:',
@@ -463,7 +463,7 @@ const i18n = {
 			'privacy.contact.email': 'Email: ',
 
 			// Documentation page
-			'docs.page.title': 'Documentation - Smart Hyperlink Recognition',
+			'docs.page.title': 'Documentation - Smart Linkify – Instant hyperlink conversion',
 			'docs.page.heading': 'Documentation',
 			'docs.page.subtitle': 'Everything you need from installation to development',
 			'docs.nav.quickstart': 'Quick Start',
@@ -471,7 +471,7 @@ const i18n = {
 			'docs.nav.development': 'Development',
 
 			'docs.qs.title': 'Quick Start',
-			'docs.qs.intro': 'Get started with Smart Hyperlink Recognition in just three steps.',
+			'docs.qs.intro': 'Get started with Smart Linkify – Instant hyperlink conversion in just three steps.',
 			'docs.qs.step1': 'Visit the <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store</a> and click "Add to Chrome" to install.',
 			'docs.qs.step2': 'Open any webpage, click the extension icon in the toolbar, and toggle the switch on for the current site.',
 			'docs.qs.step3': 'Plain text URLs and email addresses on the page will be automatically converted to clickable hyperlinks. The toolbar icon shows the conversion count.',
@@ -483,7 +483,7 @@ const i18n = {
 			'docs.install.store.step2': 'Click "Add to Chrome", then click "Add extension" in the confirmation dialog.',
 			'docs.install.store.step3': 'Once installed, the extension icon appears in your toolbar. Future updates are automatic.',
 			'docs.install.github.title': 'Option 2: GitHub Release',
-			'docs.install.github.step1': 'Go to <a href="https://github.com/xiaowulang-turbo/SmartHyperlinkRecognition/releases" target="_blank">GitHub Releases</a>, download the latest ZIP file and extract it.',
+			'docs.install.github.step1': 'Go to <a href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank">GitHub Releases</a>, download the latest ZIP file and extract it.',
 			'docs.install.github.step2': 'Navigate to <code>chrome://extensions</code> in Chrome and enable "Developer mode" in the top right.',
 			'docs.install.github.step3': 'Click "Load unpacked" and select the extracted <code>extension</code> folder.',
 			'docs.install.dev.title': 'Option 3: Developer Mode',
@@ -512,7 +512,7 @@ const i18n = {
 			'docs.dev.contributing.link': 'Go to GitHub Repository',
 
 			// Changelog page (fetches CHANGELOG.md from GitHub Raw)
-			'changelog.page.title': 'Changelog - Smart Hyperlink Recognition',
+			'changelog.page.title': 'Changelog - Smart Linkify – Instant hyperlink conversion',
 			'changelog.page.heading': 'Changelog',
 			'changelog.page.subtitle':
 				'Synced with CHANGELOG.md on the main branch of the GitHub repository',
