@@ -9,51 +9,57 @@
 	<body>
 		<div class="container">
 			<header>
-				<button
-					class="theme-toggle"
-					id="themeToggle"
-					data-i18n-title="common.switchTheme"
-					data-i18n-aria-label="common.switchTheme"
-					title="切换主题"
-					aria-label="切换主题"
-				>
-					<svg
-						class="icon icon-moon"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						aria-hidden="true"
-						focusable="false"
-					>
-						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
-					</svg>
-					<svg
-						class="icon icon-sun"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						aria-hidden="true"
-						focusable="false"
-					>
-						<circle cx="12" cy="12" r="4" />
-						<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-					</svg>
-				</button>
-				<button
-					class="lang-toggle"
-					id="langToggle"
-					data-i18n-title="common.switchLang"
-					title="切换语言"
-				>
-					EN
-				</button>
-				<h1 data-i18n="options.title">智能超链接识别 - 设置</h1>
+				<div class="header-main">
+					<h1 data-i18n="options.title">智能超链接识别 - 设置</h1>
+					<div class="header-actions">
+						<button
+							class="theme-toggle"
+							id="themeToggle"
+							data-i18n-title="common.switchTheme"
+							data-i18n-aria-label="common.switchTheme"
+							title="切换主题"
+							aria-label="切换主题"
+						>
+							<svg
+								class="icon icon-moon"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+							</svg>
+							<svg
+								class="icon icon-sun"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<circle cx="12" cy="12" r="4" />
+								<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l-1.41-1.41M17.66 6.34l-1.41-1.41" />
+							</svg>
+						</button>
+						<button
+							class="lang-toggle"
+							id="langToggle"
+							data-i18n-title="common.switchLang"
+							data-i18n-aria-label="common.switchToEnglish"
+							title="切换语言"
+							aria-label="切换到 English"
+						>
+							EN
+						</button>
+					</div>
+				</div>
 				<p class="subtitle" data-i18n="options.subtitle">
 					Smart Linkify – Instant hyperlink conversion Settings
 				</p>
@@ -77,7 +83,16 @@
 								aria-label="说明"
 								aria-describedby="help-newTab"
 							>
-								<span class="help-tip-mark" aria-hidden="true">?</span>
+								<svg
+									class="help-tip-mark"
+									viewBox="0 0 16 16"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<circle cx="8" cy="8" r="6.25" />
+									<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+									<path d="M8 11.25h.01" />
+								</svg>
 								<span
 									id="help-newTab"
 									class="help-tip-text"
@@ -106,7 +121,16 @@
 								aria-label="说明"
 								aria-describedby="help-theme"
 							>
-								<span class="help-tip-mark" aria-hidden="true">?</span>
+								<svg
+									class="help-tip-mark"
+									viewBox="0 0 16 16"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<circle cx="8" cy="8" r="6.25" />
+									<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+									<path d="M8 11.25h.01" />
+								</svg>
 								<span
 									id="help-theme"
 									class="help-tip-text"
@@ -166,7 +190,16 @@
 								aria-label="说明"
 								aria-describedby="help-lang"
 							>
-								<span class="help-tip-mark" aria-hidden="true">?</span>
+								<svg
+									class="help-tip-mark"
+									viewBox="0 0 16 16"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<circle cx="8" cy="8" r="6.25" />
+									<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+									<path d="M8 11.25h.01" />
+								</svg>
 								<span
 									id="help-lang"
 									class="help-tip-text"
@@ -215,7 +248,7 @@
 				</section>
 
 				<section class="section">
-					<h2>
+					<h2 id="whitelist-title">
 						<span data-i18n="options.whitelist.title">已启用的网站</span>
 						<button
 							type="button"
@@ -224,7 +257,16 @@
 							aria-label="说明"
 							aria-describedby="help-whitelist"
 						>
-							<span class="help-tip-mark" aria-hidden="true">?</span>
+							<svg
+								class="help-tip-mark"
+								viewBox="0 0 16 16"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<circle cx="8" cy="8" r="6.25" />
+								<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+								<path d="M8 11.25h.01" />
+							</svg>
 							<span
 								id="help-whitelist"
 								class="help-tip-text"
@@ -242,13 +284,14 @@
 					<textarea
 						id="whitelist"
 						rows="6"
+						aria-labelledby="whitelist-title"
 						data-i18n-placeholder="options.whitelist.placeholder"
 						placeholder="例如：&#10;github.com&#10;stackoverflow.com&#10;example.com"
 					></textarea>
 				</section>
 
 				<section class="section">
-					<h2>
+					<h2 id="excluded-tags-title">
 						<span data-i18n="options.excludedTags.title"
 							>排除的 HTML 标签</span
 						>
@@ -259,7 +302,16 @@
 							aria-label="说明"
 							aria-describedby="help-excludedTags"
 						>
-							<span class="help-tip-mark" aria-hidden="true">?</span>
+							<svg
+								class="help-tip-mark"
+								viewBox="0 0 16 16"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<circle cx="8" cy="8" r="6.25" />
+								<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+								<path d="M8 11.25h.01" />
+							</svg>
 							<span
 								id="help-excludedTags"
 								class="help-tip-text"
@@ -278,13 +330,14 @@
 					<input
 						type="text"
 						id="excludedTags"
+						aria-labelledby="excluded-tags-title"
 						data-i18n-placeholder="options.excludedTags.placeholder"
 						placeholder="SCRIPT, STYLE, PRE, CODE, A"
 					/>
 				</section>
 
 				<section class="section">
-					<h2>
+					<h2 id="url-match-title">
 						<span data-i18n="options.urlMatch.title">URL 匹配设置</span>
 						<button
 							type="button"
@@ -293,7 +346,16 @@
 							aria-label="说明"
 							aria-describedby="help-urlMatch"
 						>
-							<span class="help-tip-mark" aria-hidden="true">?</span>
+							<svg
+								class="help-tip-mark"
+								viewBox="0 0 16 16"
+								aria-hidden="true"
+								focusable="false"
+							>
+								<circle cx="8" cy="8" r="6.25" />
+								<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+								<path d="M8 11.25h.01" />
+							</svg>
 							<span
 								id="help-urlMatch"
 								class="help-tip-text"
@@ -318,7 +380,16 @@
 								aria-label="说明"
 								aria-describedby="help-strictMode"
 							>
-								<span class="help-tip-mark" aria-hidden="true">?</span>
+								<svg
+									class="help-tip-mark"
+									viewBox="0 0 16 16"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<circle cx="8" cy="8" r="6.25" />
+									<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+									<path d="M8 11.25h.01" />
+								</svg>
 								<span
 									id="help-strictMode"
 									class="help-tip-text"
@@ -344,7 +415,16 @@
 								aria-label="说明"
 								aria-describedby="help-excludeFileExt"
 							>
-								<span class="help-tip-mark" aria-hidden="true">?</span>
+								<svg
+									class="help-tip-mark"
+									viewBox="0 0 16 16"
+									aria-hidden="true"
+									focusable="false"
+								>
+									<circle cx="8" cy="8" r="6.25" />
+									<path d="M6.55 6.2a1.55 1.55 0 1 1 2.8.95c-.7.56-1.35.88-1.35 1.8" />
+									<path d="M8 11.25h.01" />
+								</svg>
 								<span
 									id="help-excludeFileExt"
 									class="help-tip-text"

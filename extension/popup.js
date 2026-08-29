@@ -128,9 +128,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function updateUI(whitelisted) {
+		setStatusState(whitelisted ? 'enabled' : 'disabled')
+
 		if (whitelisted) {
 			statusText.textContent = i18n.t('popup.status.enabled')
-			statusText.style.color = '#4CAF50'
 			statsGrid.style.display = ''
 			infoActive.style.display = ''
 			infoInactive.style.display = 'none'
@@ -138,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			linkCountCard.classList.remove('disabled')
 		} else {
 			statusText.textContent = i18n.t('popup.status.disabled')
-			statusText.style.color = '#F44336'
 			statsGrid.style.display = 'none'
 			infoActive.style.display = 'none'
 			infoInactive.style.display = ''
@@ -150,12 +150,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	function showUnsupported() {
 		currentDomainEl.textContent = '—'
 		siteToggle.disabled = true
+		setStatusState('unsupported')
 		statusText.textContent = i18n.t('popup.status.unsupported')
-		statusText.style.color = '#999'
 		statsGrid.style.display = 'none'
 		infoActive.style.display = 'none'
 		infoInactive.style.display = 'none'
 		infoUnsupported.style.display = ''
+	}
+
+	function setStatusState(state) {
+		statusText.classList.remove(
+			'status-enabled',
+			'status-disabled',
+			'status-unsupported'
+		)
+		statusText.classList.add('status-' + state)
 	}
 
 	// 主题切换

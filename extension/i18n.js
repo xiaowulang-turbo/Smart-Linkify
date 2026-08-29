@@ -87,6 +87,8 @@ const i18n = {
 // 通用
 			'common.switchTheme': '切换主题',
 			'common.switchLang': '切换语言',
+			'common.switchToEnglish': '切换到 English',
+			'common.switchToChinese': '切换到中文',
 			'common.help': '说明',
 
 			// 欢迎页面
@@ -199,6 +201,8 @@ const i18n = {
 // 通用
 			'common.switchTheme': 'Switch Theme',
 			'common.switchLang': 'Switch Language',
+			'common.switchToEnglish': 'Switch to English',
+			'common.switchToChinese': 'Switch to Chinese',
 			'common.help': 'Help',
 
 			// 欢迎页面
@@ -363,10 +367,14 @@ const i18n = {
 		const btn = document.querySelector('.lang-toggle')
 		if (btn) {
 			btn.textContent = this.currentLang === 'zh-CN' ? 'EN' : '中'
-			btn.title =
+			const labelKey =
 				this.currentLang === 'zh-CN'
-					? 'Switch to English'
-					: '切换到中文'
+					? 'common.switchToEnglish'
+					: 'common.switchToChinese'
+			const label = this.t(labelKey)
+			btn.title = label
+			btn.setAttribute('aria-label', label)
+			btn.setAttribute('data-i18n-aria-label', labelKey)
 		}
 	},
 }

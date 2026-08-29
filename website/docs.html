@@ -7,191 +7,16 @@
 		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
 		<title data-i18n="docs.page.title">使用文档 - 智能超链接识别</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		/>
-		<style>
-			.docs-page {
-				padding-top: 100px;
-				min-height: calc(100vh - 200px);
-			}
-
-			.docs-content {
-				max-width: 800px;
-				margin: 0 auto;
-				padding: 2rem;
-			}
-
-			.docs-header {
-				text-align: center;
-				margin-bottom: 3rem;
-			}
-
-			.docs-header h1 {
-				font-size: 2.5rem;
-				margin-bottom: 1rem;
-				color: var(--color-text);
-				font-weight: 600;
-			}
-
-			.docs-header .docs-subtitle {
-				color: var(--text-secondary);
-				font-size: 0.95rem;
-			}
-
-			.docs-nav {
-				display: flex;
-				justify-content: center;
-				gap: 12px;
-				margin-bottom: 2.5rem;
-				flex-wrap: wrap;
-			}
-
-			.docs-nav a {
-				padding: 8px 18px;
-				border-radius: var(--radius, 8px);
-				background: var(--bg-secondary);
-				color: var(--text-primary);
-				text-decoration: none;
-				font-size: 0.9rem;
-				transition: border-color var(--dur-normal, 200ms) var(--ease, ease),
-					color var(--dur-normal, 200ms) var(--ease, ease);
-				border: 1px solid var(--border-color);
-			}
-
-			.docs-nav a:hover {
-				border-color: var(--color-accent);
-				color: var(--color-accent);
-				background: var(--color-accent-soft);
-			}
-
-			.docs-section {
-				margin-bottom: 3rem;
-			}
-
-			.docs-section h2 {
-				font-size: 1.5rem;
-				color: var(--text-primary);
-				margin-bottom: 1rem;
-				padding-bottom: 0.5rem;
-				border-bottom: 1px solid var(--color-border);
-				display: inline-block;
-			}
-
-			.docs-section h3 {
-				font-size: 1.15rem;
-				color: var(--text-primary);
-				margin: 1.5rem 0 0.75rem;
-			}
-
-			.docs-section p,
-			.docs-section li {
-				color: var(--text-secondary);
-				line-height: 1.8;
-				margin-bottom: 1rem;
-			}
-
-			.docs-section ul,
-			.docs-section ol {
-				padding-left: 1.5rem;
-				margin-bottom: 1rem;
-			}
-
-			.docs-section li {
-				margin-bottom: 0.5rem;
-			}
-
-			.docs-section code {
-				background: var(--bg-secondary);
-				padding: 2px 6px;
-				border-radius: 4px;
-				font-size: 0.9em;
-			}
-
-			.docs-section pre {
-				background: var(--bg-secondary);
-				padding: 1rem 1.25rem;
-				border-radius: 8px;
-				overflow-x: auto;
-				margin: 1rem 0;
-				font-size: 0.88rem;
-				line-height: 1.6;
-			}
-
-			.docs-section pre code {
-				background: none;
-				padding: 0;
-			}
-
-			.step-list {
-				counter-reset: step;
-				list-style: none;
-				padding-left: 0;
-			}
-
-			.step-list li {
-				counter-increment: step;
-				padding-left: 2.5rem;
-				position: relative;
-			}
-
-			.step-list li::before {
-				content: counter(step);
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 1.8rem;
-				height: 1.8rem;
-				background: transparent;
-				color: var(--color-accent);
-				border: 1px solid var(--color-border);
-				border-radius: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: 0.85rem;
-				font-weight: 600;
-			}
-
-			.highlight-box {
-				background: var(--bg-secondary);
-				border-left: 3px solid var(--color-accent);
-				padding: 1rem 1.5rem;
-				border-radius: 0 var(--radius, 8px) var(--radius, 8px) 0;
-				margin: 1.5rem 0;
-			}
-
-			.highlight-box p {
-				margin: 0;
-				color: var(--text-primary);
-			}
-
-			.structure-tree {
-				font-family: 'Courier New', monospace;
-				font-size: 0.88rem;
-				line-height: 1.7;
-				color: var(--text-secondary);
-			}
-		</style>
 	</head>
 	<body>
 		<!-- 导航栏 -->
 		<nav class="navbar">
 			<div class="container">
 				<div class="nav-brand">
-					<a
-						href="index.html"
-						style="
-							display: flex;
-							align-items: center;
-							text-decoration: none;
-							color: inherit;
-						"
-					>
+					<a href="index.html" class="nav-brand-link">
 						<img
 							src="images/icon512.png"
-							alt="Logo"
+							alt="Smart Linkify"
 							class="logo-img"
 						/>
 						<span class="brand-name" data-i18n="nav.brand"
@@ -215,8 +40,10 @@
 						<a
 							href="https://github.com/xiaowulang-turbo/Smart-Linkify"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
-							<i class="fab fa-github"></i> GitHub
+							<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z" /></svg>
+							<span>GitHub</span>
 						</a>
 					</li>
 					<li>
@@ -260,14 +87,22 @@
 						<button
 							class="lang-toggle"
 							onclick="i18n.toggle()"
+							data-i18n-title="common.switchLanguage"
+							data-i18n-aria-label="common.switchLanguage"
 							title="切换语言"
+							aria-label="切换语言"
 						>
 							中
 						</button>
 					</li>
 				</ul>
-				<button class="mobile-menu-toggle">
-					<i class="fas fa-bars"></i>
+				<button class="mobile-menu-toggle" type="button" aria-expanded="false" data-i18n-aria-label="common.toggleMenu" aria-label="切换导航">
+					<svg class="icon menu-icon menu-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+						<path d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+					<svg class="icon menu-icon menu-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+						<path d="m6 6 12 12M18 6 6 18" />
+					</svg>
 				</button>
 			</div>
 		</nav>
@@ -298,7 +133,7 @@
 
 						<ol class="step-list">
 							<li data-i18n="docs.qs.step1">
-								访问 <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store</a>，点击「添加至 Chrome」安装扩展。
+								访问 <a class="external-link" href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>，点击「添加至 Chrome」安装扩展。
 							</li>
 							<li data-i18n="docs.qs.step2">
 								打开任意网页，点击工具栏中的扩展图标，开启当前网站的开关。
@@ -322,7 +157,7 @@
 						<h3 data-i18n="docs.install.store.title">方式一：Chrome Web Store（推荐）</h3>
 						<ol class="step-list">
 							<li data-i18n="docs.install.store.step1">
-								访问 <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store 页面</a>。
+								访问 <a class="external-link" href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank" rel="noopener noreferrer">Chrome Web Store 页面</a>。
 							</li>
 							<li data-i18n="docs.install.store.step2">
 								点击「添加至 Chrome」按钮，在弹出的对话框中点击「添加扩展程序」。
@@ -335,7 +170,7 @@
 						<h3 data-i18n="docs.install.github.title">方式二：GitHub Release</h3>
 						<ol class="step-list">
 							<li data-i18n="docs.install.github.step1">
-								前往 <a href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank">GitHub Releases</a> 下载最新版本的 ZIP 文件并解压。
+								前往 <a class="external-link" href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 下载最新版本的 ZIP 文件并解压。
 							</li>
 							<li data-i18n="docs.install.github.step2">
 								在 Chrome 地址栏输入 <code>chrome://extensions</code>，开启右上角的「开发者模式」。
@@ -429,8 +264,9 @@
 							<a
 								href="https://github.com/xiaowulang-turbo/Smart-Linkify"
 								target="_blank"
+								rel="noopener noreferrer"
 							>
-								<i class="fab fa-github"></i>
+								<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z" /></svg>
 								<span data-i18n="docs.dev.contributing.link">前往 GitHub 仓库</span>
 							</a>
 						</p>
@@ -447,7 +283,7 @@
 						<h3>
 							<img
 								src="images/icon512.png"
-								alt="Logo"
+								alt="Smart Linkify"
 								class="footer-logo"
 							/>
 							<span data-i18n="nav.brand">智能超链接识别</span>
@@ -483,6 +319,8 @@
 							<li>
 								<a
 									href="https://github.com/xiaowulang-turbo/Smart-Linkify/issues"
+									target="_blank"
+									rel="noopener noreferrer"
 									data-i18n="footer.issues"
 								>问题反馈</a>
 							</li>
@@ -497,6 +335,8 @@
 							<li>
 								<a
 									href="https://github.com/xiaowulang-turbo/Smart-Linkify"
+									target="_blank"
+									rel="noopener noreferrer"
 									data-i18n="footer.github"
 								>GitHub 仓库</a>
 							</li>
@@ -504,6 +344,7 @@
 								<a
 									href="https://github.com/xiaowulang-turbo/Smart-Linkify/blob/main/LICENSE"
 									target="_blank"
+									rel="noopener noreferrer"
 									data-i18n="footer.license"
 								>开源许可</a>
 							</li>
@@ -517,7 +358,7 @@
 					</p>
 					<p>
 						<span data-i18n="footer.mit">基于</span>
-						<a href="https://github.com/xiaowulang-turbo/Smart-Linkify/blob/main/LICENSE" target="_blank">MIT License</a>
+						<a href="https://github.com/xiaowulang-turbo/Smart-Linkify/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT License</a>
 					</p>
 				</div>
 			</div>
