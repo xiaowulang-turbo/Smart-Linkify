@@ -87,6 +87,7 @@ const i18n = {
 // 通用
 			'common.switchTheme': '切换主题',
 			'common.switchLang': '切换语言',
+			'common.help': '说明',
 
 			// 欢迎页面
 			'welcome.title': '欢迎使用',
@@ -198,6 +199,7 @@ const i18n = {
 // 通用
 			'common.switchTheme': 'Switch Theme',
 			'common.switchLang': 'Switch Language',
+			'common.help': 'Help',
 
 			// 欢迎页面
 			'welcome.title': 'Welcome',
