@@ -592,7 +592,7 @@ body {
 
 .features-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 	gap: var(--space-6);
 }
 
@@ -759,7 +759,7 @@ body {
 
 .download-options {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 	gap: var(--space-8);
 	margin-bottom: var(--space-16);
 }
@@ -971,19 +971,9 @@ body {
 	font-weight: 500;
 }
 
-.faq-question i {
-	color: var(--color-text-subtle);
-	transition: transform var(--dur-normal) var(--ease);
-	font-size: var(--text-sm);
-}
-
 .faq-question .icon {
 	color: var(--color-text-subtle);
 	transition: transform var(--dur-normal) var(--ease);
-}
-
-.faq-item.active .faq-question i {
-	transform: rotate(180deg);
 }
 
 .faq-item.active .faq-question .icon {

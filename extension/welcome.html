@@ -268,6 +268,16 @@
 				height: 16px;
 			}
 
+			@media (prefers-reduced-motion: reduce) {
+				*,
+				*::before,
+				*::after {
+					animation-duration: 0.01ms !important;
+					animation-iteration-count: 1 !important;
+					transition-duration: 0.01ms !important;
+				}
+			}
+
 			@media (max-width: 480px) {
 				body {
 					padding: 12px 8px;

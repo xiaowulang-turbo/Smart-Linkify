@@ -88,9 +88,22 @@ function initMobileMenu() {
 // FAQ 折叠效果
 function initFAQ() {
 	const faqItems = document.querySelectorAll('.faq-item')
+	const syncFAQItem = (item, isExpanded) => {
+		const question = item.querySelector('.faq-question')
+		const answerId = question?.getAttribute('aria-controls')
+		const answer = answerId
+			? document.getElementById(answerId)
+			: item.querySelector('.faq-answer')
+
+		question?.setAttribute('aria-expanded', String(isExpanded))
+		answer?.setAttribute('aria-hidden', String(!isExpanded))
+	}
 
 	faqItems.forEach((item) => {
 		const question = item.querySelector('.faq-question')
+
+		syncFAQItem(item, item.classList.contains('active'))
+		if (!question) return
 
 		question.addEventListener('click', () => {
 			// 关闭其他打开的项
@@ -100,15 +113,13 @@ function initFAQ() {
 					otherItem.classList.contains('active')
 				) {
 					otherItem.classList.remove('active')
-					otherItem
-						.querySelector('.faq-question')
-						?.setAttribute('aria-expanded', 'false')
+					syncFAQItem(otherItem, false)
 				}
 			})
 
 			// 切换当前项
 			const isActive = item.classList.toggle('active')
-			question.setAttribute('aria-expanded', String(isActive))
+			syncFAQItem(item, isActive)
 		})
 	})
 }
