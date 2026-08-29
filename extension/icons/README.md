@@ -1,40 +1,29 @@
-# Icon guidance
+# Icon assets
 
-The extension expects these PNG assets:
+The extension ships these PNG assets, all of which are referenced by
+`extension/manifest.json`:
 
-- `icon16.png` — toolbar icon
-- `icon48.png` — extension management page
-- `icon128.png` — installation and Chrome Web Store
+- `icon16.png` — 16×16 toolbar icon
+- `icon48.png` — 48×48 extension management icon
+- `icon128.png` — 128×128 installation and Chrome Web Store icon
 
-## Source SVG contract
+No standalone SVG files are shipped in this directory. The SVGs used by the
+extension UI are inline markup and are separate from the manifest icon assets.
 
-When creating the source artwork:
+## Validation guidance and results
 
-- Use a `24 24` viewBox so the mark aligns with the UI icon system.
-- Prefer rounded line SVGs with `stroke="currentColor"`, `fill="none"`,
-  `stroke-linecap="round"`, and `stroke-linejoin="round"`.
-- Keep the mark simple and legible at toolbar size.
-- Use the shared restrained teal accent only when a filled export is required;
-  avoid gradients and baked-in theme-specific colors.
+For every replacement export, check each size for:
 
-Example source structure:
+1. A recognizable mark without relying on fine detail.
+2. Adequate contrast on light and dark surfaces.
+3. Crisp edges, transparent-background behavior, and consistent padding.
 
-```svg
-<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="..." stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-```
+Current shipped-file checks:
 
-## Asset validation
+- `icon16.png`: present, valid PNG, 16×16.
+- `icon48.png`: present, valid PNG, 48×48.
+- `icon128.png`: present, valid PNG, 128×128.
 
-Before adding final assets, validate each export at `16x16`, `48x48`, and
-`128x128`:
-
-1. Confirm the mark remains recognizable without relying on fine detail.
-2. Check transparent or solid backgrounds against light and dark surfaces.
-3. Confirm crisp edges and correct padding at all three sizes.
-4. Keep the PNG files in this directory and update the manifest references
-   only when the assets are ready.
-
-Final PNG/SVG assets are intentionally not generated in this task.
+The current exports render as solid teal squares at all three sizes. Their
+presence, format, dimensions, and manifest references are valid; review the
+mark's recognizability and padding if the artwork is replaced.

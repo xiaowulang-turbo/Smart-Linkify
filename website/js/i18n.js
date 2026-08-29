@@ -636,10 +636,7 @@ const i18n = {
 		const btn = document.querySelector('.lang-toggle')
 		if (btn) {
 			btn.textContent = this.currentLang === 'zh-CN' ? 'EN' : '中'
-			btn.title =
-				this.currentLang === 'zh-CN'
-					? 'Switch to English'
-					: '切换到中文'
+			btn.title = this.t('common.switchLanguage')
 			btn.setAttribute(
 				'aria-label',
 				this.currentLang === 'zh-CN'
