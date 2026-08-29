@@ -1,3 +1,8 @@
+:root {
+	--radius-sm: 6px;
+	--radius-md: 8px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -88,6 +93,7 @@ body {
 	margin: 0 auto;
 	background: var(--bg-elevated);
 	border: 1px solid var(--border);
+	border-radius: var(--radius-md);
 }
 
 header {
@@ -134,7 +140,7 @@ header h1 {
 	height: 32px;
 	padding: 0;
 	border: 1px solid var(--border);
-	border-radius: 4px;
+	border-radius: var(--radius-sm);
 	background: transparent;
 	color: var(--text-primary);
 	font: inherit;
@@ -181,6 +187,7 @@ main {
 	min-width: 0;
 	padding: 16px;
 	border: 1px solid var(--border);
+	border-radius: var(--radius-md);
 }
 
 .section h2 {
@@ -258,16 +265,15 @@ main {
 }
 
 .help-tip-mark {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	flex: 0 0 16px;
 	width: 16px;
 	height: 16px;
-	border: 1px solid currentColor;
-	border-radius: 50%;
-	font-size: 11px;
-	font-weight: 600;
-	line-height: 1;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.4;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
 
 .help-tip-text {
@@ -323,7 +329,7 @@ input[type='text'] {
 	min-width: 0;
 	padding: 10px;
 	border: 1px solid var(--border);
-	border-radius: 4px;
+	border-radius: var(--radius-sm);
 	background: var(--input);
 	color: var(--text-primary);
 	font: 14px/1.5 'Courier New', monospace;
@@ -355,7 +361,7 @@ input[type='text']:focus {
 	min-width: 0;
 	padding: 9px 10px;
 	border: 1px solid var(--border);
-	border-radius: 4px;
+	border-radius: var(--radius-sm);
 	background: transparent;
 	color: var(--text-primary);
 	font-size: 13px;
@@ -416,7 +422,7 @@ footer {
 	min-height: 38px;
 	padding: 9px 16px;
 	border: 1px solid var(--border);
-	border-radius: 4px;
+	border-radius: var(--radius-sm);
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 1.2;
