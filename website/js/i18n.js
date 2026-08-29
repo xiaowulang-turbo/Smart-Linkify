@@ -12,6 +12,8 @@ const i18n = {
 			'nav.download': '下载',
 			'nav.docs': '文档',
 			'common.switchTheme': '切换主题',
+			'common.switchLanguage': '切换到 English',
+			'common.toggleMenu': '切换导航',
 
 			// Hero 区域
 			'hero.title': '智能超链接识别',
@@ -59,11 +61,11 @@ const i18n = {
 			'demo.text2': '或发送邮件到 contact@example.com',
 			'demo.text3': '查看项目 https://github.com/example/project',
 			'demo.after.text1':
-				'访问我们的网站 <a href="http://www.example.com" target="_blank">www.example.com</a> 获取更多信息',
+				'访问我们的网站 <a class="external-link" href="http://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a> 获取更多信息',
 			'demo.after.text2':
 				'或发送邮件到 <a href="mailto:contact@example.com">contact@example.com</a>',
 			'demo.after.text3':
-				'查看项目 <a href="https://github.com/example/project" target="_blank">https://github.com/example/project</a>',
+				'查看项目 <a class="external-link" href="https://github.com/example/project" target="_blank" rel="noopener noreferrer">https://github.com/example/project</a>',
 
 			// 使用场景
 			'usecases.title': '使用场景',
@@ -208,18 +210,18 @@ const i18n = {
 
 			'docs.qs.title': '快速开始',
 			'docs.qs.intro': '只需三步，即可开始使用智能超链接识别扩展。',
-			'docs.qs.step1': '访问 <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store</a>，点击「添加至 Chrome」安装扩展。',
+			'docs.qs.step1': '访问 <a class="external-link" href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>，点击「添加至 Chrome」安装扩展。',
 			'docs.qs.step2': '打开任意网页，点击工具栏中的扩展图标，开启当前网站的开关。',
 			'docs.qs.step3': '页面中的纯文本 URL 和邮箱地址将自动转换为可点击的超链接，工具栏图标会显示转换数量。',
 			'docs.qs.tip': '<strong>提示：</strong>扩展采用白名单机制，需要手动为每个网站启用。在设置页面可以批量管理已启用的网站，子域名会自动包含。',
 
 			'docs.install.title': '安装指南',
 			'docs.install.store.title': '方式一：Chrome Web Store（推荐）',
-			'docs.install.store.step1': '访问 <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store 页面</a>。',
+			'docs.install.store.step1': '访问 <a class="external-link" href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank" rel="noopener noreferrer">Chrome Web Store 页面</a>。',
 			'docs.install.store.step2': '点击「添加至 Chrome」按钮，在弹出的对话框中点击「添加扩展程序」。',
 			'docs.install.store.step3': '安装完成后，工具栏会出现扩展图标，后续版本将自动更新。',
 			'docs.install.github.title': '方式二：GitHub Release',
-			'docs.install.github.step1': '前往 <a href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank">GitHub Releases</a> 下载最新版本的 ZIP 文件并解压。',
+			'docs.install.github.step1': '前往 <a class="external-link" href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 下载最新版本的 ZIP 文件并解压。',
 			'docs.install.github.step2': '在 Chrome 地址栏输入 <code>chrome://extensions</code>，开启右上角的「开发者模式」。',
 			'docs.install.github.step3': '点击「加载已解压的扩展程序」，选择解压后的 <code>extension</code> 文件夹。',
 			'docs.install.dev.title': '方式三：开发者模式',
@@ -266,6 +268,8 @@ const i18n = {
 			'nav.download': 'Download',
 			'nav.docs': 'Docs',
 			'common.switchTheme': 'Switch theme',
+			'common.switchLanguage': 'Switch to Chinese',
+			'common.toggleMenu': 'Toggle navigation',
 
 			// Hero 区域
 			'hero.title': 'Smart Linkify – Instant hyperlink conversion',
@@ -314,11 +318,11 @@ const i18n = {
 			'demo.text2': 'Or send email to contact@example.com',
 			'demo.text3': 'Check out https://github.com/example/project',
 			'demo.after.text1':
-				'Visit our website <a href="http://www.example.com" target="_blank">www.example.com</a> for more info',
+				'Visit our website <a class="external-link" href="http://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a> for more info',
 			'demo.after.text2':
 				'Or send email to <a href="mailto:contact@example.com">contact@example.com</a>',
 			'demo.after.text3':
-				'Check out <a href="https://github.com/example/project" target="_blank">https://github.com/example/project</a>',
+				'Check out <a class="external-link" href="https://github.com/example/project" target="_blank" rel="noopener noreferrer">https://github.com/example/project</a>',
 
 			// 使用场景
 			'usecases.title': 'Use Cases',
@@ -472,18 +476,18 @@ const i18n = {
 
 			'docs.qs.title': 'Quick Start',
 			'docs.qs.intro': 'Get started with Smart Linkify – Instant hyperlink conversion in just three steps.',
-			'docs.qs.step1': 'Visit the <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store</a> and click "Add to Chrome" to install.',
+			'docs.qs.step1': 'Visit the <a class="external-link" href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank" rel="noopener noreferrer">Chrome Web Store</a> and click "Add to Chrome" to install.',
 			'docs.qs.step2': 'Open any webpage, click the extension icon in the toolbar, and toggle the switch on for the current site.',
 			'docs.qs.step3': 'Plain text URLs and email addresses on the page will be automatically converted to clickable hyperlinks. The toolbar icon shows the conversion count.',
 			'docs.qs.tip': '<strong>Tip:</strong> The extension uses a whitelist model — you need to manually enable it for each site. Manage enabled sites in the settings page. Subdomains are included automatically.',
 
 			'docs.install.title': 'Installation Guide',
 			'docs.install.store.title': 'Option 1: Chrome Web Store (Recommended)',
-			'docs.install.store.step1': 'Visit the <a href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank">Chrome Web Store page</a>.',
+			'docs.install.store.step1': 'Visit the <a class="external-link" href="https://chromewebstore.google.com/detail/dcfgdgniapopldemehcepddjcfhakhfl" target="_blank" rel="noopener noreferrer">Chrome Web Store page</a>.',
 			'docs.install.store.step2': 'Click "Add to Chrome", then click "Add extension" in the confirmation dialog.',
 			'docs.install.store.step3': 'Once installed, the extension icon appears in your toolbar. Future updates are automatic.',
 			'docs.install.github.title': 'Option 2: GitHub Release',
-			'docs.install.github.step1': 'Go to <a href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank">GitHub Releases</a>, download the latest ZIP file and extract it.',
+			'docs.install.github.step1': 'Go to <a class="external-link" href="https://github.com/xiaowulang-turbo/Smart-Linkify/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a>, download the latest ZIP file and extract it.',
 			'docs.install.github.step2': 'Navigate to <code>chrome://extensions</code> in Chrome and enable "Developer mode" in the top right.',
 			'docs.install.github.step3': 'Click "Load unpacked" and select the extracted <code>extension</code> folder.',
 			'docs.install.dev.title': 'Option 3: Developer Mode',
@@ -636,6 +640,12 @@ const i18n = {
 				this.currentLang === 'zh-CN'
 					? 'Switch to English'
 					: '切换到中文'
+			btn.setAttribute(
+				'aria-label',
+				this.currentLang === 'zh-CN'
+					? '切换到 English'
+					: '切换到中文'
+			)
 		}
 	},
 }

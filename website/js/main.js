@@ -70,17 +70,8 @@ function initMobileMenu() {
 
 	if (toggle && menu) {
 		toggle.addEventListener('click', () => {
-			menu.classList.toggle('active')
-
-			// 切换图标
-			const icon = toggle.querySelector('i')
-			if (menu.classList.contains('active')) {
-				icon.classList.remove('fa-bars')
-				icon.classList.add('fa-times')
-			} else {
-				icon.classList.remove('fa-times')
-				icon.classList.add('fa-bars')
-			}
+			const isOpen = menu.classList.toggle('active')
+			toggle.setAttribute('aria-expanded', String(isOpen))
 		})
 
 		// 点击菜单项后关闭菜单
@@ -88,9 +79,7 @@ function initMobileMenu() {
 		menuItems.forEach((item) => {
 			item.addEventListener('click', () => {
 				menu.classList.remove('active')
-				const icon = toggle.querySelector('i')
-				icon.classList.remove('fa-times')
-				icon.classList.add('fa-bars')
+				toggle.setAttribute('aria-expanded', 'false')
 			})
 		})
 	}
@@ -111,11 +100,15 @@ function initFAQ() {
 					otherItem.classList.contains('active')
 				) {
 					otherItem.classList.remove('active')
+					otherItem
+						.querySelector('.faq-question')
+						?.setAttribute('aria-expanded', 'false')
 				}
 			})
 
 			// 切换当前项
-			item.classList.toggle('active')
+			const isActive = item.classList.toggle('active')
+			question.setAttribute('aria-expanded', String(isActive))
 		})
 	})
 }
