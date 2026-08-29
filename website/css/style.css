@@ -1,33 +1,48 @@
-/* ===== Design Token System (aligned with Xiaowu.github.io) ===== */
-:root {
-	/* Colors */
-	--color-bg: #ffffff;
-	--color-bg-subtle: #fafafa;
-	--color-bg-muted: #f4f4f5;
-	--color-border: #e4e4e7;
-	--color-border-strong: #d4d4d8;
-	--color-text: #18181b;
-	--color-text-muted: #52525b;
-	--color-text-subtle: #a1a1aa;
-	--color-accent: #2563eb;
-	--color-accent-hover: #1d4ed8;
-	--color-accent-soft: #dbeafe;
-	--color-success: #16a34a;
-	--color-warning: #ca8a04;
-	--color-danger: #dc2626;
+/* ===== Shared visual token contract ===== */
+:root,
+[data-theme='light'] {
+	--bg-primary: #ffffff;
+	--bg-secondary: #fafafa;
+	--bg-elevated: #ffffff;
+	--text-primary: #18181b;
+	--text-secondary: #52525b;
+	--border: #e4e4e7;
+	--input: #ffffff;
+	--shadow: 0 1px 3px rgb(0 0 0 / 0.04), 0 4px 12px rgb(0 0 0 / 0.04);
+	--accent: #0f766e;
+	--accent-hover: #115e59;
+	--accent-fg: #ffffff;
+	--success: #15803d;
+	--danger: #b91c1c;
+	--success-bg: #ecfdf5;
+	--danger-bg: #fef2f2;
+	--accent-soft: #f0fdfa;
+	--dot-close: #ff5f56;
+	--dot-minimize: #ffbd2e;
+	--dot-maximize: #27c93f;
 
-	/* Legacy aliases for backward compat (secondary pages use these) */
-	--primary-color: var(--color-accent);
-	--secondary-color: var(--color-accent-hover);
-	--text-primary: var(--color-text);
-	--text-secondary: var(--color-text-muted);
-	--text-dark: var(--color-text);
-	--text-light: var(--color-text-muted);
-	--bg-primary: var(--color-bg);
-	--bg-secondary: var(--color-bg-muted);
+	/* Compatibility aliases for existing website selectors. */
+	--color-bg: var(--bg-primary);
+	--color-bg-subtle: var(--bg-secondary);
+	--color-bg-muted: #f4f4f5;
+	--color-border: var(--border);
+	--color-border-strong: #d4d4d8;
+	--color-text: var(--text-primary);
+	--color-text-muted: var(--text-secondary);
+	--color-text-subtle: #a1a1aa;
+	--color-accent: var(--accent);
+	--color-accent-hover: var(--accent-hover);
+	--color-accent-soft: var(--accent-soft);
+	--color-success: var(--success);
+	--color-warning: #a16207;
+	--color-danger: var(--danger);
+	--primary-color: var(--accent);
+	--secondary-color: var(--accent-hover);
+	--text-dark: var(--text-primary);
+	--text-light: var(--text-secondary);
 	--bg-light: var(--color-bg-muted);
-	--white: var(--color-bg);
-	--border-color: var(--color-border);
+	--white: var(--bg-elevated);
+	--border-color: var(--border);
 
 	/* Radius */
 	--radius-sm: 4px;
@@ -38,7 +53,6 @@
 
 	/* Shadow */
 	--shadow-sm: 0 1px 2px rgb(0 0 0 / 0.04);
-	--shadow: 0 1px 3px rgb(0 0 0 / 0.04), 0 4px 12px rgb(0 0 0 / 0.04);
 	--shadow-md: 0 4px 16px rgb(0 0 0 / 0.06), 0 12px 32px rgb(0 0 0 / 0.04);
 
 	/* Spacing */
@@ -82,7 +96,7 @@
 	--prose-max: 800px;
 }
 
-/* ===== Dark Mode Token Override (single-layer variable rewrite) ===== */
+/* ===== Explicit dark theme token override ===== */
 [data-theme='dark'] {
 	--color-bg: #0a0a0a;
 	--color-bg-subtle: #111113;
@@ -92,21 +106,37 @@
 	--color-text: #f4f4f5;
 	--color-text-muted: #a1a1aa;
 	--color-text-subtle: #71717a;
-	--color-accent: #60a5fa;
-	--color-accent-hover: #93bbfd;
-	--color-accent-soft: #1e3a5f;
-
-	--primary-color: var(--color-accent);
-	--secondary-color: var(--color-accent-hover);
-	--text-primary: var(--color-text);
-	--text-secondary: var(--color-text-muted);
-	--text-dark: var(--color-text);
-	--text-light: var(--color-text-muted);
-	--bg-primary: var(--color-bg);
-	--bg-secondary: var(--color-bg-muted);
+	--bg-primary: #0a0a0a;
+	--bg-secondary: #111113;
+	--bg-elevated: #1a1a1d;
+	--text-primary: #f4f4f5;
+	--text-secondary: #a1a1aa;
+	--border: #2a2a2d;
+	--input: #1a1a1d;
+	--shadow: 0 1px 3px rgb(0 0 0 / 0.2), 0 4px 12px rgb(0 0 0 / 0.2);
+	--accent: #2dd4bf;
+	--accent-hover: #5eead4;
+	--accent-fg: #042f2e;
+	--success: #4ade80;
+	--danger: #f87171;
+	--success-bg: #14532d;
+	--danger-bg: #7f1d1d;
+	--accent-soft: #134e4a;
+	--dot-close: #ff5f56;
+	--dot-minimize: #ffbd2e;
+	--dot-maximize: #27c93f;
+	--color-accent: var(--accent);
+	--color-accent-hover: var(--accent-hover);
+	--color-accent-soft: var(--accent-soft);
+	--color-success: var(--success);
+	--color-danger: var(--danger);
+	--primary-color: var(--accent);
+	--secondary-color: var(--accent-hover);
+	--text-dark: var(--text-primary);
+	--text-light: var(--text-secondary);
 	--bg-light: var(--color-bg-muted);
-	--white: var(--color-bg);
-	--border-color: var(--color-border);
+	--white: var(--bg-elevated);
+	--border-color: var(--border);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,21 +149,37 @@
 		--color-text: #f4f4f5;
 		--color-text-muted: #a1a1aa;
 		--color-text-subtle: #71717a;
-		--color-accent: #60a5fa;
-		--color-accent-hover: #93bbfd;
-		--color-accent-soft: #1e3a5f;
-
-		--primary-color: var(--color-accent);
-		--secondary-color: var(--color-accent-hover);
-		--text-primary: var(--color-text);
-		--text-secondary: var(--color-text-muted);
-		--text-dark: var(--color-text);
-		--text-light: var(--color-text-muted);
-		--bg-primary: var(--color-bg);
-		--bg-secondary: var(--color-bg-muted);
+		--bg-primary: #0a0a0a;
+		--bg-secondary: #111113;
+		--bg-elevated: #1a1a1d;
+		--text-primary: #f4f4f5;
+		--text-secondary: #a1a1aa;
+		--border: #2a2a2d;
+		--input: #1a1a1d;
+		--shadow: 0 1px 3px rgb(0 0 0 / 0.2), 0 4px 12px rgb(0 0 0 / 0.2);
+		--accent: #2dd4bf;
+		--accent-hover: #5eead4;
+		--accent-fg: #042f2e;
+		--success: #4ade80;
+		--danger: #f87171;
+		--success-bg: #14532d;
+		--danger-bg: #7f1d1d;
+		--accent-soft: #134e4a;
+		--dot-close: #ff5f56;
+		--dot-minimize: #ffbd2e;
+		--dot-maximize: #27c93f;
+		--color-accent: var(--accent);
+		--color-accent-hover: var(--accent-hover);
+		--color-accent-soft: var(--accent-soft);
+		--color-success: var(--success);
+		--color-danger: var(--danger);
+		--primary-color: var(--accent);
+		--secondary-color: var(--accent-hover);
+		--text-dark: var(--text-primary);
+		--text-light: var(--text-secondary);
 		--bg-light: var(--color-bg-muted);
-		--white: var(--color-bg);
-		--border-color: var(--color-border);
+		--white: var(--bg-elevated);
+		--border-color: var(--border);
 	}
 }
 
@@ -332,7 +378,7 @@ body {
 
 .btn-primary {
 	background: var(--color-accent);
-	color: #fff;
+	color: var(--accent-fg);
 }
 
 .btn-primary:hover {
@@ -413,15 +459,15 @@ body {
 }
 
 .browser-dots span:nth-child(1) {
-	background: #ff5f56;
+	background: var(--dot-close);
 }
 
 .browser-dots span:nth-child(2) {
-	background: #ffbd2e;
+	background: var(--dot-minimize);
 }
 
 .browser-dots span:nth-child(3) {
-	background: #27c93f;
+	background: var(--dot-maximize);
 }
 
 .browser-url {
@@ -483,19 +529,19 @@ body {
 }
 
 .status-badge.active {
-	background: #dcfce7;
-	color: #16a34a;
+	background: var(--success-bg);
+	color: var(--success);
 }
 
 [data-theme='dark'] .status-badge.active {
-	background: #166534;
-	color: #4ade80;
+	background: var(--success-bg);
+	color: var(--success);
 }
 
 @media (prefers-color-scheme: dark) {
 	html:not([data-theme='light']) .status-badge.active {
-		background: #166534;
-		color: #4ade80;
+		background: var(--success-bg);
+		color: var(--success);
 	}
 }
 
@@ -1094,7 +1140,7 @@ body {
 .lang-toggle:hover {
 	background: var(--color-accent);
 	border-color: var(--color-accent);
-	color: #fff;
+	color: var(--accent-fg);
 }
 
 /* ===== Notification (class used by JS) ===== */
