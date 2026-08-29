@@ -87,6 +87,8 @@ const i18n = {
 // 通用
 			'common.switchTheme': '切换主题',
 			'common.switchLang': '切换语言',
+			'common.switchToEnglish': 'Switch to English',
+			'common.switchToChinese': '切换到中文',
 			'common.help': '说明',
 
 			// 欢迎页面
@@ -199,6 +201,8 @@ const i18n = {
 // 通用
 			'common.switchTheme': 'Switch Theme',
 			'common.switchLang': 'Switch Language',
+			'common.switchToEnglish': 'Switch to English',
+			'common.switchToChinese': '切换到中文',
 			'common.help': 'Help',
 
 			// 欢迎页面
@@ -363,10 +367,11 @@ const i18n = {
 		const btn = document.querySelector('.lang-toggle')
 		if (btn) {
 			btn.textContent = this.currentLang === 'zh-CN' ? 'EN' : '中'
-			btn.title =
+			btn.title = this.t(
 				this.currentLang === 'zh-CN'
-					? 'Switch to English'
-					: '切换到中文'
+					? 'common.switchToEnglish'
+					: 'common.switchToChinese'
+			)
 		}
 	},
 }
